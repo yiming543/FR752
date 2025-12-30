@@ -1,0 +1,4 @@
+D:/yiming/00work/FR752_V01.X/_build/FR752/default/CMakeFiles/FR752_default_default_XC8_compile.dir
+D:/yiming/00work/FR752_V01.X/_build/FR752/default/CMakeFiles/FR752_default_image_wqwkqD8Q.dir
+D:/yiming/00work/FR752_V01.X/_build/FR752/default/CMakeFiles/edit_cache.dir
+D:/yiming/00work/FR752_V01.X/_build/FR752/default/CMakeFiles/rebuild_cache.dir

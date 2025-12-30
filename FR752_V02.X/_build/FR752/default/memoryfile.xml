@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="D:\yiming\00work\FR752.X\out\FR752\default.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>8192</length>
+      <used>1719</used>
+      <free>6473</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>512</length>
+      <used>104</used>
+      <free>408</free>
+    </memory>
+  </executable>
+</project>
