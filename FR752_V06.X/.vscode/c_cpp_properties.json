@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "XC8 PIC16F1936",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include",
+                "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc",
+                "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/c99",
+                "C:/Program Files/Microchip/xc8/v2.46/pic/include",
+                "C:/Program Files/Microchip/xc8/v2.46/pic/include/proc",
+                "C:/Program Files/Microchip/xc8/v2.46/pic/include/c99"
+            ],
+            "defines": [
+                "__XC8=1",
+                "__PICC__=1",
+                "_16F1936=1",
+                "__16F1936__",
+                "XPRJ_default=default"
+            ],
+            "compilerPath": "C:/Program Files/Microchip/xc8/v2.46/bin/xc8-cc.exe",
+            "compilerArgs": [
+                "-mcpu=16F1936",
+                "-mdfp=C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8"
+            ],
+            "cStandard": "c99",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x86"
+        }
+    ],
+    "version": 4
+}
