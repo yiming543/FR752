@@ -1,66 +1,55 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"63 D:\yiming\00work\FR752_V05.X\mcc_generated_files/LINDrivers/lin_app.h
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files/LINDrivers/lin_app.h: 63: const lin_rx_cmd_t scheduleTable[] = {
+"63 D:\yiming\00work\FR752_V06.X\mcc_generated_files/LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/LINDrivers/lin_app.h: 63: const lin_rx_cmd_t scheduleTable[] = {
 [c E3123 0 1 2 .. ]
 [n E3123 . TRANSMIT RECEIVE ERROR  ]
-"60 D:\yiming\00work\FR752_V05.X\mcc_generated_files/LINDrivers/lin_slave.h
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files/LINDrivers/lin_slave.h: 60: typedef struct {
+"60 D:\yiming\00work\FR752_V06.X\mcc_generated_files/LINDrivers/lin_slave.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/LINDrivers/lin_slave.h: 60: typedef struct {
 [s S360 `uc 1 `E3123 1 `uc 1 `*uc 1 ]
 [n S360 . cmd type length data ]
-"63 D:\yiming\00work\FR752_V05.X\mcc_generated_files/LINDrivers/lin_app.h
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files/LINDrivers/lin_app.h: 63: const lin_rx_cmd_t scheduleTable[] = {
+"63 D:\yiming\00work\FR752_V06.X\mcc_generated_files/LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/LINDrivers/lin_app.h: 63: const lin_rx_cmd_t scheduleTable[] = {
 [c E3230 1 .. ]
 [n E3230 . SIGNAL  ]
-[t ~ __interrupt . k ]
-[t T1 __interrupt ]
-"357 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 357:     struct {
-[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S31 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
-"367
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 367:     struct {
-[s S32 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S32 . . T0IF . T0IE ]
-"356
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 356: typedef union {
-[u S30 `S31 1 `S32 1 ]
-[n S30 . . . ]
-"374
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
-[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
-"219 D:\yiming\00work\FR752_V05.X\mcc_generated_files/tmr0.h
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files/tmr0.h: 219: void TMR0_ISR(void);
-[v _TMR0_ISR `(v ~T0 @X0 0 ef ]
-"1435 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1435:     struct {
-[s S81 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S81 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE TMR1GIE ]
-"1434
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1434: typedef union {
-[u S80 `S81 1 ]
-[n S80 . . ]
-"1446
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1446: extern volatile PIE1bits_t PIE1bits __attribute__((address(0x091)));
-[v _PIE1bits `VS80 ~T0 @X0 0 e@145 ]
-"642
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 642:     struct {
-[s S42 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S42 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF TMR1GIF ]
-"641
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 641: typedef union {
-[u S41 `S42 1 ]
-[n S41 . . ]
-"653
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 653: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x011)));
-[v _PIR1bits `VS41 ~T0 @X0 0 e@17 ]
-[v F3077 `(v ~T0 @X0 0 tf ]
-"94 D:\yiming\00work\FR752_V05.X\mcc_generated_files/eusart.h
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files/eusart.h: 94: extern void (*EUSART_TxDefaultInterruptHandler)(void);
-[v _EUSART_TxDefaultInterruptHandler `*F3077 ~T0 @X0 0 e ]
-[v F3079 `(v ~T0 @X0 0 tf ]
-"95
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files/eusart.h: 95: extern void (*EUSART_RxDefaultInterruptHandler)(void);
-[v _EUSART_RxDefaultInterruptHandler `*F3079 ~T0 @X0 0 e ]
+"144 D:\yiming\00work\FR752_V06.X\mcc_generated_files/pin_manager.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/pin_manager.h: 144: void PIN_MANAGER_Initialize (void);
+[v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
+"88 D:\yiming\00work\FR752_V06.X\mcc_generated_files/mcc.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/mcc.h: 88: void OSCILLATOR_Initialize(void);
+[v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
+"100
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/mcc.h: 100: void WDT_Initialize(void);
+[v _WDT_Initialize `(v ~T0 @X0 0 ef ]
+"96 D:\yiming\00work\FR752_V06.X\mcc_generated_files/epwm1.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/epwm1.h: 96: void EPWM1_Initialize(void);
+[v _EPWM1_Initialize `(v ~T0 @X0 0 ef ]
+"103 D:\yiming\00work\FR752_V06.X\mcc_generated_files/tmr2.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/tmr2.h: 103: void TMR2_Initialize(void);
+[v _TMR2_Initialize `(v ~T0 @X0 0 ef ]
+"98 D:\yiming\00work\FR752_V06.X\mcc_generated_files/tmr0.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/tmr0.h: 98: void TMR0_Initialize(void);
+[v _TMR0_Initialize `(v ~T0 @X0 0 ef ]
+"117 D:\yiming\00work\FR752_V06.X\mcc_generated_files/eusart.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/eusart.h: 117: void EUSART_Initialize(void);
+[v _EUSART_Initialize `(v ~T0 @X0 0 ef ]
+"69 D:\yiming\00work\FR752_V06.X\mcc_generated_files/LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/LINDrivers/lin_app.h: 69: void LIN_Slave_Initialize(void);
+[v _LIN_Slave_Initialize `(v ~T0 @X0 0 ef ]
+"1845 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1845: extern volatile unsigned char OSCCON __attribute__((address(0x099)));
+[v _OSCCON `Vuc ~T0 @X0 0 e@153 ]
+"1787
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1787: extern volatile unsigned char OSCTUNE __attribute__((address(0x098)));
+[v _OSCTUNE `Vuc ~T0 @X0 0 e@152 ]
+"2666
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 2666: extern volatile unsigned char BORCON __attribute__((address(0x116)));
+[v _BORCON `Vuc ~T0 @X0 0 e@278 ]
+"8074
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 8074: extern volatile __bit PLLR __attribute__((address(0x4D6)));
+[v _PLLR `Vb ~T0 @X0 0 e@1238 ]
+"1728
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1728: extern volatile unsigned char WDTCON __attribute__((address(0x097)));
+[v _WDTCON `Vuc ~T0 @X0 0 e@151 ]
 "54 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -556,11 +545,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7099
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 7099: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"61 D:\yiming\00work\FR752_V05.X\mcc_generated_files/LINDrivers/lin_app.h
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files/LINDrivers/lin_app.h: 61: uint8_t SIGNAL_Data[8];
+"61 D:\yiming\00work\FR752_V06.X\mcc_generated_files/LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/LINDrivers/lin_app.h: 61: uint8_t SIGNAL_Data[8];
 [v _SIGNAL_Data `uc ~T0 @X0 -> 8 `i e ]
 "63
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files/LINDrivers/lin_app.h: 63: const lin_rx_cmd_t scheduleTable[] = {
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/LINDrivers/lin_app.h: 63: const lin_rx_cmd_t scheduleTable[] = {
 [v _scheduleTable `CS360 ~T0 @X0 -> -> 1 `i `ux e ]
 [i _scheduleTable
 :U ..
@@ -572,89 +561,90 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ..
 ]
-[v $root$_INTERRUPT_InterruptManager `(v ~T0 @X0 0 e ]
-"52 D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 52: void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
-[v _INTERRUPT_InterruptManager `(v ~T1 @X0 1 ef ]
-"53
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 53: {
+"50 D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 50: void SYSTEM_Initialize(void)
+[v _SYSTEM_Initialize `(v ~T0 @X0 1 ef ]
+"51
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 51: {
 {
-[e :U _INTERRUPT_InterruptManager ]
+[e :U _SYSTEM_Initialize ]
 [f ]
+"52
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 52:     PIN_MANAGER_Initialize();
+[e ( _PIN_MANAGER_Initialize ..  ]
+"53
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 53:     OSCILLATOR_Initialize();
+[e ( _OSCILLATOR_Initialize ..  ]
+"54
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 54:     WDT_Initialize();
+[e ( _WDT_Initialize ..  ]
 "55
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 55:     if(INTCONbits.TMR0IE == 1 && INTCONbits.TMR0IF == 1)
-[e $ ! && == -> . . _INTCONbits 0 5 `i -> 1 `i == -> . . _INTCONbits 0 2 `i -> 1 `i 366  ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 55:     EPWM1_Initialize();
+[e ( _EPWM1_Initialize ..  ]
 "56
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 56:     {
-{
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 56:     TMR2_Initialize();
+[e ( _TMR2_Initialize ..  ]
 "57
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 57:         TMR0_ISR();
-[e ( _TMR0_ISR ..  ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 57:     TMR0_Initialize();
+[e ( _TMR0_Initialize ..  ]
 "58
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 58:     }
-}
-[e $U 367  ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 58:     EUSART_Initialize();
+[e ( _EUSART_Initialize ..  ]
 "59
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 59:     else if(INTCONbits.PEIE == 1)
-[e :U 366 ]
-[e $ ! == -> . . _INTCONbits 0 6 `i -> 1 `i 368  ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 59:     LIN_Slave_Initialize();
+[e ( _LIN_Slave_Initialize ..  ]
 "60
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 60:     {
-{
-"61
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 61:         if(PIE1bits.TXIE == 1 && PIR1bits.TXIF == 1)
-[e $ ! && == -> . . _PIE1bits 0 4 `i -> 1 `i == -> . . _PIR1bits 0 4 `i -> 1 `i 369  ]
-"62
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 62:         {
-{
-"63
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 63:             EUSART_TxDefaultInterruptHandler();
-[e ( *U _EUSART_TxDefaultInterruptHandler ..  ]
-"64
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 64:         }
-}
-[e $U 370  ]
-"65
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 65:         else if(PIE1bits.RCIE == 1 && PIR1bits.RCIF == 1)
-[e :U 369 ]
-[e $ ! && == -> . . _PIE1bits 0 5 `i -> 1 `i == -> . . _PIR1bits 0 5 `i -> 1 `i 371  ]
-"66
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 66:         {
-{
-"67
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 67:             EUSART_RxDefaultInterruptHandler();
-[e ( *U _EUSART_RxDefaultInterruptHandler ..  ]
-"68
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 68:         }
-}
-[e $U 372  ]
-"69
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 69:         else
-[e :U 371 ]
-"70
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 70:         {
-{
-"72
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 72:         }
-}
-[e :U 372 ]
-[e :U 370 ]
-"73
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 73:     }
-}
-[e $U 373  ]
-"74
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 74:     else
-[e :U 368 ]
-"75
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 75:     {
-{
-"77
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 77:     }
-}
-[e :U 373 ]
-[e :U 367 ]
-"78
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c: 78: }
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 60: }
 [e :UE 365 ]
+}
+"62
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 62: void OSCILLATOR_Initialize(void)
+[v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
+"63
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 63: {
+{
+[e :U _OSCILLATOR_Initialize ]
+[f ]
+"65
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 65:     OSCCON = 0x70;
+[e = _OSCCON -> -> 112 `i `uc ]
+"67
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 67:     OSCTUNE = 0x00;
+[e = _OSCTUNE -> -> 0 `i `uc ]
+"69
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 69:     BORCON = 0x00;
+[e = _BORCON -> -> 0 `i `uc ]
+"71
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 71:     while(PLLR == 0)
+[e $U 367  ]
+[e :U 368 ]
+"72
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 72:     {
+{
+"73
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 73:     }
+}
+[e :U 367 ]
+"71
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 71:     while(PLLR == 0)
+[e $ == -> _PLLR `i -> 0 `i 368  ]
+[e :U 369 ]
+"74
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 74: }
+[e :UE 366 ]
+}
+"76
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 76: void WDT_Initialize(void)
+[v _WDT_Initialize `(v ~T0 @X0 1 ef ]
+"77
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 77: {
+{
+[e :U _WDT_Initialize ]
+[f ]
+"79
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 79:     WDTCON = 0x16;
+[e = _WDTCON -> -> 22 `i `uc ]
+"80
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c: 80: }
+[e :UE 370 ]
 }

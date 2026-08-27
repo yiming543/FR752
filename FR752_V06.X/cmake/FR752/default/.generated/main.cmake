@@ -29,16 +29,16 @@ endif()
 
 
 # Main target for this project
-add_executable(FR752_default_image_epEMGbCo ${FR752_default_library_list})
+add_executable(FR752_default_image_40rnrh_M ${FR752_default_library_list})
 
-set_target_properties(FR752_default_image_epEMGbCo PROPERTIES
+set_target_properties(FR752_default_image_40rnrh_M PROPERTIES
     OUTPUT_NAME "default"
     SUFFIX ".elf"
     ADDITIONAL_CLEAN_FILES "${output_extensions}"
     RUNTIME_OUTPUT_DIRECTORY "${FR752_default_output_dir}")
-target_link_libraries(FR752_default_image_epEMGbCo PRIVATE ${FR752_default_default_XC8_FILE_TYPE_link})
+target_link_libraries(FR752_default_image_40rnrh_M PRIVATE ${FR752_default_default_XC8_FILE_TYPE_link})
 
 # Add the link options from the rule file.
-FR752_default_link_rule( FR752_default_image_epEMGbCo)
+FR752_default_link_rule( FR752_default_image_40rnrh_M)
 
 

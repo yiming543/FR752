@@ -1,5 +1,5 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"50 D:\yiming\00work\FR752_V05.X\mcc_generated_files\device_config.c
+"50 D:\yiming\00work\FR752_V06.X\mcc_generated_files\device_config.c
 [p x FOSC  =  INTOSC     ]
 "51
 [p x WDTE  =  OFF     ]
@@ -30,5 +30,5 @@ Version 4.0 HI-TECH Software Intermediate Code
 "66
 [p x BORV  =  LO     ]
 "67
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\device_config.c: 67: 
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\device_config.c: 67: 
 [p x LVP  =  OFF     ]

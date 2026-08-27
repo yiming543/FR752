@@ -1,58 +1,45 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"2373 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 2373: extern volatile unsigned char LATE __attribute__((address(0x110)));
-[v _LATE `Vuc ~T0 @X0 0 e@272 ]
-"2187
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 2187: extern volatile unsigned char LATA __attribute__((address(0x10C)));
-[v _LATA `Vuc ~T0 @X0 0 e@268 ]
-"2249
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 2249: extern volatile unsigned char LATB __attribute__((address(0x10D)));
-[v _LATB `Vuc ~T0 @X0 0 e@269 ]
-"2311
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 2311: extern volatile unsigned char LATC __attribute__((address(0x10E)));
-[v _LATC `Vuc ~T0 @X0 0 e@270 ]
-"1408
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1408: extern volatile unsigned char TRISE __attribute__((address(0x090)));
-[v _TRISE `Vuc ~T0 @X0 0 e@144 ]
-"1222
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1222: extern volatile unsigned char TRISA __attribute__((address(0x08C)));
-[v _TRISA `Vuc ~T0 @X0 0 e@140 ]
-"1284
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1284: extern volatile unsigned char TRISB __attribute__((address(0x08D)));
-[v _TRISB `Vuc ~T0 @X0 0 e@141 ]
-"1346
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1346: extern volatile unsigned char TRISC __attribute__((address(0x08E)));
-[v _TRISC `Vuc ~T0 @X0 0 e@142 ]
-"3129
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3129: extern volatile unsigned char ANSELB __attribute__((address(0x18D)));
-[v _ANSELB `Vuc ~T0 @X0 0 e@397 ]
-"3071
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3071: extern volatile unsigned char ANSELA __attribute__((address(0x18C)));
-[v _ANSELA `Vuc ~T0 @X0 0 e@396 ]
-"3766
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3766: extern volatile unsigned char WPUE __attribute__((address(0x210)));
-[v _WPUE `Vuc ~T0 @X0 0 e@528 ]
-"3696
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3696: extern volatile unsigned char WPUB __attribute__((address(0x20D)));
-[v _WPUB `Vuc ~T0 @X0 0 e@525 ]
-"1600
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1600:     struct {
-[s S87 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S87 . PS0 PS1 PS2 PSA TMR0SE TMR0CS INTEDG nWPUEN ]
-"1610
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1610:     struct {
-[s S88 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S88 . PS . T0SE T0CS ]
-"1599
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1599: typedef union {
-[u S86 `S87 1 `S88 1 ]
-[n S86 . . . ]
-"1617
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1617: extern volatile OPTION_REGbits_t OPTION_REGbits __attribute__((address(0x095)));
-[v _OPTION_REGbits `VS86 ~T0 @X0 0 e@149 ]
-"3015
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3015: extern volatile unsigned char APFCON __attribute__((address(0x11D)));
-[v _APFCON `Vuc ~T0 @X0 0 e@285 ]
+"63 D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_app.h: 63: const lin_rx_cmd_t scheduleTable[] = {
+[c E2729 0 1 2 .. ]
+[n E2729 . TRANSMIT RECEIVE ERROR  ]
+"60 D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_slave.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_slave.h: 60: typedef struct {
+[s S356 `uc 1 `E2729 1 `uc 1 `*uc 1 ]
+[n S356 . cmd type length data ]
+"63 D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_app.h: 63: const lin_rx_cmd_t scheduleTable[] = {
+[c E2836 1 .. ]
+[n E2836 . SIGNAL  ]
+"122 D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/../epwm1.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/../epwm1.h: 122: void EPWM1_LoadDutyValue(uint16_t dutyValue);
+[v _EPWM1_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
+"2193 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 2193:     struct {
+[s S115 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S115 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
+"2192
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 2192: typedef union {
+[u S114 `S115 1 ]
+[n S114 . . ]
+"2204
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 2204: extern volatile LATAbits_t LATAbits __attribute__((address(0x10C)));
+[v _LATAbits `VS114 ~T0 @X0 0 e@268 ]
+"49 D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 49: LampControl_t lampControl;
+[c E2818 9 41 10 42 11 43 12 76 17 49 18 50 19 51 148 180 .. ]
+[n E2818 . eOffDayP eOffDayN eParkDayP eParkDayN eLobeamDayP eLobeamDayN eAutoDayP eAutoDayN eOffNightP eOffNightN eParkNightP eParkNightN eLobeamNightP eLobeamNightN eAutoNightP eAutoNightN  ]
+[v F2769 `*CS356 ~T0 @X0 1 t ]
+[v F2770 `(v ~T0 @X0 0 tf ]
+"82 D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_slave.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_slave.h: 82: void LIN_init(uint8_t tableLength, const lin_rx_cmd_t* const command, void (*processData)(void));
+[v _LIN_init `(v ~T0 @X0 0 ef3`uc`C*CS356`*F2770 ]
+"71 D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_app.h: 71: void processLIN(void);
+[v _processLIN `(v ~T0 @X0 0 ef ]
+"88 D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_slave.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_slave.h: 88: uint8_t LIN_getPacket(uint8_t* data);
+[v _LIN_getPacket `(uc ~T0 @X0 0 ef1`*uc ]
 "54 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -548,69 +535,388 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7099
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 7099: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"55 D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 55: void PIN_MANAGER_Initialize(void)
-[v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
-"56
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 56: {
-{
-[e :U _PIN_MANAGER_Initialize ]
-[f ]
-"60
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 60:     LATE = 0x00;
-[e = _LATE -> -> 0 `i `uc ]
-"61
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 61:     LATA = 0x00;
-[e = _LATA -> -> 0 `i `uc ]
-"62
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 62:     LATB = 0x00;
-[e = _LATB -> -> 0 `i `uc ]
+"61 D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_app.h: 61: uint8_t SIGNAL_Data[8];
+[v _SIGNAL_Data `uc ~T0 @X0 -> 8 `i e ]
 "63
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 63:     LATC = 0x00;
-[e = _LATC -> -> 0 `i `uc ]
-"68
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 68:     TRISE = 0x08;
-[e = _TRISE -> -> 8 `i `uc ]
-"69
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 69:     TRISA = 0xFB;
-[e = _TRISA -> -> 251 `i `uc ]
-"70
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 70:     TRISB = 0xFF;
-[e = _TRISB -> -> 255 `i `uc ]
-"71
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 71:     TRISC = 0xBB;
-[e = _TRISC -> -> 187 `i `uc ]
-"76
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 76:     ANSELB = 0x3F;
-[e = _ANSELB -> -> 63 `i `uc ]
-"77
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 77:     ANSELA = 0x2A;
-[e = _ANSELA -> -> 42 `i `uc ]
-"82
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 82:     WPUE = 0x00;
-[e = _WPUE -> -> 0 `i `uc ]
-"83
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 83:     WPUB = 0x00;
-[e = _WPUB -> -> 0 `i `uc ]
-"84
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 84:     OPTION_REGbits.nWPUEN = 1;
-[e = . . _OPTION_REGbits 0 7 -> -> 1 `i `uc ]
-"90
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 90:     APFCON = 0x00;
-[e = _APFCON -> -> 0 `i `uc ]
-"97
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 97: }
-[e :UE 354 ]
-}
-"99
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 99: void PIN_MANAGER_IOC(void)
-[v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
-"100
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 100: {
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers/lin_app.h: 63: const lin_rx_cmd_t scheduleTable[] = {
+[v _scheduleTable `CS356 ~T0 @X0 -> -> 1 `i `ux e ]
+[i _scheduleTable
+:U ..
+:U ..
+-> . `E2836 0 `uc
+. `E2729 1
+-> -> 8 `i `uc
+&U _SIGNAL_Data
+..
+..
+]
+"41 D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 41: void POS_ON(void) { EPWM1_LoadDutyValue((50)); }
+[v _POS_ON `(v ~T0 @X0 1 ef ]
 {
-[e :U _PIN_MANAGER_IOC ]
+[e :U _POS_ON ]
 [f ]
+[e ( _EPWM1_LoadDutyValue (1 -> -> 50 `i `us ]
+[e :UE 361 ]
+}
+"42
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 42: void POS_OFF(void) { EPWM1_LoadDutyValue(0); }
+[v _POS_OFF `(v ~T0 @X0 1 ef ]
+{
+[e :U _POS_OFF ]
+[f ]
+[e ( _EPWM1_LoadDutyValue (1 -> -> 0 `i `us ]
+[e :UE 362 ]
+}
+"43
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 43: void DRL_ON(void) { EPWM1_LoadDutyValue((500)); }
+[v _DRL_ON `(v ~T0 @X0 1 ef ]
+{
+[e :U _DRL_ON ]
+[f ]
+[e ( _EPWM1_LoadDutyValue (1 -> -> 500 `i `us ]
+[e :UE 363 ]
+}
+"44
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 44: void DRL_OFF(void) { EPWM1_LoadDutyValue(0); }
+[v _DRL_OFF `(v ~T0 @X0 1 ef ]
+{
+[e :U _DRL_OFF ]
+[f ]
+[e ( _EPWM1_LoadDutyValue (1 -> -> 0 `i `us ]
+[e :UE 364 ]
+}
+"45
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 45: void HIBEAM_ON(void) { do { LATAbits.LATA2 = 1; } while(0); }
+[v _HIBEAM_ON `(v ~T0 @X0 1 ef ]
+{
+[e :U _HIBEAM_ON ]
+[f ]
+[e :U 368 ]
+{
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
+}
+[e :U 367 ]
+[e :UE 365 ]
+}
+"46
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 46: void HIBEAM_OFF(void) { do { LATAbits.LATA2 = 0; } while(0); }
+[v _HIBEAM_OFF `(v ~T0 @X0 1 ef ]
+{
+[e :U _HIBEAM_OFF ]
+[f ]
+[e :U 372 ]
+{
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 371 ]
+[e :UE 369 ]
+}
+"49
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 49: LampControl_t lampControl;
+[v _lampControl `E2818 ~T0 @X0 1 e ]
+"50
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 50: void LIN_Slave_Initialize(void)
+[v _LIN_Slave_Initialize `(v ~T0 @X0 1 ef ]
+"51
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 51: {
+{
+[e :U _LIN_Slave_Initialize ]
+[f ]
+"52
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 52:   LIN_init((sizeof(scheduleTable)/sizeof(lin_rx_cmd_t)), scheduleTable, processLIN);
+[e ( _LIN_init (3 , , -> / -> # _scheduleTable `ui -> # `S356 `ui `uc &U _scheduleTable &U _processLIN ]
+"53
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 53: }
+[e :UE 373 ]
+}
+"55
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 55: void processLIN(void)
+[v _processLIN `(v ~T0 @X0 1 ef ]
+"56
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 56: {
+{
+[e :U _processLIN ]
+[f ]
+"57
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 57:   uint8_t tempRxData[8];
+[v _tempRxData `uc ~T0 @X0 -> 8 `i a ]
+"58
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 58:   uint8_t cmd;
+[v _cmd `uc ~T0 @X0 1 a ]
+"60
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 60:   cmd = LIN_getPacket(tempRxData);
+[e = _cmd ( _LIN_getPacket (1 &U _tempRxData ]
+"63
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 63:   if (cmd != SIGNAL)
+[e $ ! != -> _cmd `i -> . `E2836 0 `i 375  ]
+"64
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 64:   {
+{
+"65
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 65:     return;
+[e $UE 374  ]
+"66
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 66:   }
+}
+[e :U 375 ]
+"68
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 68:   if (tempRxData[0] == 0x24)
+[e $ ! == -> *U + &U _tempRxData * -> -> -> 0 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 36 `i 376  ]
+"69
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 69:   {
+{
+"70
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 70:     switch (tempRxData[2])
+[e $U 378  ]
+"71
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 71:     {
+{
+"72
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 72:     case eOffDayP:
+[e :U 379 ]
+"73
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 73:       POS_OFF();
+[e ( _POS_OFF ..  ]
+"74
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 74:       break;
+[e $U 377  ]
+"76
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 76:     case eOffDayN:
+[e :U 380 ]
+"77
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 77:       POS_OFF();
+[e ( _POS_OFF ..  ]
+"78
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 78:       break;
+[e $U 377  ]
+"80
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 80:     case eParkDayP:
+[e :U 381 ]
+"81
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 81:       POS_ON();
+[e ( _POS_ON ..  ]
+"82
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 82:       break;
+[e $U 377  ]
+"84
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 84:     case eParkDayN:
+[e :U 382 ]
+"85
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 85:       POS_ON();
+[e ( _POS_ON ..  ]
+"86
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 86:       break;
+[e $U 377  ]
+"88
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 88:     case eLobeamDayP:
+[e :U 383 ]
+"89
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 89:       POS_ON();
+[e ( _POS_ON ..  ]
+"90
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 90:       break;
+[e $U 377  ]
+"92
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 92:     case eLobeamDayN:
+[e :U 384 ]
+"93
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 93:       POS_ON();
+[e ( _POS_ON ..  ]
+"94
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 94:       break;
+[e $U 377  ]
+"96
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 96:     case eAutoDayP:
+[e :U 385 ]
+"97
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 97:       POS_OFF();
+[e ( _POS_OFF ..  ]
+"98
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 98:       break;
+[e $U 377  ]
+"100
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 100:     case eAutoDayN:
+[e :U 386 ]
 "101
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c: 101: }
-[e :UE 355 ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 101:       DRL_ON();
+[e ( _DRL_ON ..  ]
+"102
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 102:       break;
+[e $U 377  ]
+"104
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 104:     case eOffNightP:
+[e :U 387 ]
+"105
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 105:       POS_OFF();
+[e ( _POS_OFF ..  ]
+"106
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 106:       break;
+[e $U 377  ]
+"108
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 108:     case eOffNightN:
+[e :U 388 ]
+"109
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 109:       POS_OFF();
+[e ( _POS_OFF ..  ]
+"110
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 110:       break;
+[e $U 377  ]
+"112
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 112:     case eParkNightP:
+[e :U 389 ]
+"113
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 113:       POS_ON();
+[e ( _POS_ON ..  ]
+"114
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 114:       break;
+[e $U 377  ]
+"116
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 116:     case eParkNightN:
+[e :U 390 ]
+"117
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 117:       POS_ON();
+[e ( _POS_ON ..  ]
+"118
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 118:       break;
+[e $U 377  ]
+"120
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 120:     case eLobeamNightP:
+[e :U 391 ]
+"121
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 121:       POS_ON();
+[e ( _POS_ON ..  ]
+"122
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 122:       break;
+[e $U 377  ]
+"124
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 124:     case eLobeamNightN:
+[e :U 392 ]
+"125
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 125:       POS_ON();
+[e ( _POS_ON ..  ]
+"126
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 126:       break;
+[e $U 377  ]
+"128
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 128:     case eAutoNightP:
+[e :U 393 ]
+"129
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 129:       POS_ON();
+[e ( _POS_ON ..  ]
+"130
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 130:       break;
+[e $U 377  ]
+"132
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 132:     case eAutoNightN:
+[e :U 394 ]
+"133
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 133:       POS_ON();
+[e ( _POS_ON ..  ]
+"134
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 134:       break;
+[e $U 377  ]
+"136
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 136:     default:
+[e :U 395 ]
+"138
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 138:       break;
+[e $U 377  ]
+"139
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 139:     }
+}
+[e $U 377  ]
+[e :U 378 ]
+[e [\ *U + &U _tempRxData * -> -> -> 2 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux , $ . `E2818 0 379
+ , $ . `E2818 1 380
+ , $ . `E2818 2 381
+ , $ . `E2818 3 382
+ , $ . `E2818 4 383
+ , $ . `E2818 5 384
+ , $ . `E2818 6 385
+ , $ . `E2818 7 386
+ , $ . `E2818 8 387
+ , $ . `E2818 9 388
+ , $ . `E2818 10 389
+ , $ . `E2818 11 390
+ , $ . `E2818 12 391
+ , $ . `E2818 13 392
+ , $ . `E2818 14 393
+ , $ . `E2818 15 394
+ 395 ]
+[e :U 377 ]
+"141
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 141:     if (tempRxData[1] & 0B11000000)
+[e $ ! != & -> *U + &U _tempRxData * -> -> -> 1 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 192 `i -> 0 `i 396  ]
+"142
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 142:     {
+{
+"143
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 143:       HIBEAM_ON();
+[e ( _HIBEAM_ON ..  ]
+"144
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 144:     }
+}
+[e $U 397  ]
+"145
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 145:     else
+[e :U 396 ]
+"146
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 146:     {
+{
+"147
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 147:       HIBEAM_OFF();
+[e ( _HIBEAM_OFF ..  ]
+"148
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 148:     }
+}
+[e :U 397 ]
+"149
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 149:   }
+}
+[e $U 398  ]
+"150
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 150:   else if ((tempRxData[0] == 0x31) && (tempRxData[1] == 0x08))
+[e :U 376 ]
+[e $ ! && == -> *U + &U _tempRxData * -> -> -> 0 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 49 `i == -> *U + &U _tempRxData * -> -> -> 1 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 8 `i 399  ]
+"151
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 151:   {
+{
+"152
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 152:     POS_OFF();
+[e ( _POS_OFF ..  ]
+"153
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 153:     HIBEAM_OFF();
+[e ( _HIBEAM_OFF ..  ]
+"154
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 154:   }
+}
+[e $U 400  ]
+"155
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 155:   else if ((tempRxData[0] == 0x31) && (tempRxData[1] == 0x0A))
+[e :U 399 ]
+[e $ ! && == -> *U + &U _tempRxData * -> -> -> 0 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 49 `i == -> *U + &U _tempRxData * -> -> -> 1 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 10 `i 401  ]
+"156
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 156:   {
+{
+"157
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 157:   }
+}
+[e $U 402  ]
+"158
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 158:   else
+[e :U 401 ]
+"159
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 159:   {
+{
+"161
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 161:   }
+}
+[e :U 402 ]
+[e :U 400 ]
+[e :U 398 ]
+"162
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c: 162: }
+[e :UE 374 ]
 }

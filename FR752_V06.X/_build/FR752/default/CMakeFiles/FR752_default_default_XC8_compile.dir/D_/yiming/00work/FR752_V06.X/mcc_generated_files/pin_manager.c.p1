@@ -1,123 +1,58 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"63 D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h: 63: const lin_rx_cmd_t scheduleTable[] = {
-[c E48 0 1 2 .. ]
-[n E48 . TRANSMIT RECEIVE ERROR  ]
-"60 D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_slave.h
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_slave.h: 60: typedef struct {
-[s S3 `uc 1 `E48 1 `uc 1 `*uc 1 ]
-[n S3 . cmd type length data ]
-"63 D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h: 63: const lin_rx_cmd_t scheduleTable[] = {
-[c E3230 1 .. ]
-[n E3230 . SIGNAL  ]
-"3650 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3650:     struct {
-[s S196 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S196 . ABDEN WUE . BRG16 SCKP . RCIDL ABDOVF ]
-"3649
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3649: typedef union {
-[u S195 `S196 1 ]
-[n S195 . . ]
-"3661
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3661: extern volatile BAUDCONbits_t BAUDCONbits __attribute__((address(0x19F)));
-[v _BAUDCONbits `VS195 ~T0 @X0 0 e@415 ]
-"204 D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/tmr0.h
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/tmr0.h: 204: void TMR0_Reload(void);
-[v _TMR0_Reload `(v ~T0 @X0 0 ef ]
-"129
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/tmr0.h: 129: uint8_t TMR0_ReadTimer(void);
-[v _TMR0_ReadTimer `(uc ~T0 @X0 0 ef ]
-"156 D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/pin_manager.h
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/pin_manager.h: 156: void PIN_MANAGER_IOC(void);
-[v _PIN_MANAGER_IOC `(v ~T0 @X0 0 ef ]
-"76 D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/eusart.h
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/eusart.h: 76:     struct {
-[s S362 :1 `uc 1 :1 `uc 1 :1 `uc 1 :5 `uc 1 ]
-[n S362 . perr ferr oerr reserved ]
-"75
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/eusart.h: 75: typedef union {
-[u S361 `S362 1 `uc 1 ]
-[n S361 . . status ]
-"308
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/eusart.h: 308: eusart_status_t EUSART_get_last_status(void);
-[v _EUSART_get_last_status `(S361 ~T0 @X0 0 ef ]
-"260
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/eusart.h: 260: _Bool EUSART_is_tx_done(void);
-[v _EUSART_is_tx_done `(a ~T0 @X0 0 ef ]
-"165
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/eusart.h: 165: _Bool EUSART_is_tx_ready(void);
-[v _EUSART_is_tx_ready `(a ~T0 @X0 0 ef ]
-"325 D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/tmr2.h
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/tmr2.h: 325: _Bool TMR2_HasOverflowOccured(void);
-[v _TMR2_HasOverflowOccured `(a ~T0 @X0 0 ef ]
-"290
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/tmr2.h: 290: void TMR2_LoadPeriodRegister(uint8_t periodVal);
-[v _TMR2_LoadPeriodRegister `(v ~T0 @X0 0 ef1`uc ]
-"238
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/tmr2.h: 238: void TMR2_WriteTimer(uint8_t timerVal);
-[v _TMR2_WriteTimer `(v ~T0 @X0 0 ef1`uc ]
-"199
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/tmr2.h: 199: uint8_t TMR2_ReadTimer(void);
-[v _TMR2_ReadTimer `(uc ~T0 @X0 0 ef ]
-"164
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/tmr2.h: 164: void TMR2_StopTimer(void);
-[v _TMR2_StopTimer `(v ~T0 @X0 0 ef ]
-"132
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/tmr2.h: 132: void TMR2_StartTimer(void);
-[v _TMR2_StartTimer `(v ~T0 @X0 0 ef ]
-"74 D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h: 74: void DRL_ON(void);
-[v _DRL_ON `(v ~T0 @X0 0 ef ]
-"75
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h: 75: void DRL_OFF(void);
-[v _DRL_OFF `(v ~T0 @X0 0 ef ]
-[p mainexit ]
-"75 D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/mcc.h
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/mcc.h: 75: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"357 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 357:     struct {
-[s S36 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S36 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
-"367
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 367:     struct {
-[s S37 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S37 . . T0IF . T0IE ]
-"356
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 356: typedef union {
-[u S35 `S36 1 `S37 1 ]
-[n S35 . . . ]
-"374
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
-[v _INTCONbits `VS35 ~T0 @X0 0 e@11 ]
-"140 D:\yiming\00work\FR752_V05.X\main.c
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 140:     LIN_handler();
-[c E36 0 1 2 3 4 5 6 7 8 9 .. ]
-[n E36 . LIN_RX_IDLE LIN_RX_BREAK LIN_RX_SYNC LIN_RX_PID LIN_RX_DATA LIN_RX_CHECKSUM LIN_RX_TX_DATA LIN_RX_RDY LIN_RX_ERROR LIN_RX_WAIT  ]
-"92 D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_slave.h
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_slave.h: 92: lin_rx_state_t LIN_handler(void);
-[v _LIN_handler `(E36 ~T0 @X0 0 ef ]
-"115
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_slave.h: 115: _Bool LIN_signalTimeoutOccurred(void);
-[v _LIN_signalTimeoutOccurred `(a ~T0 @X0 0 ef ]
-"73 D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h: 73: void POS_ON(void);
-[v _POS_ON `(v ~T0 @X0 0 ef ]
-"76
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h: 76: void HIBEAM_OFF(void);
-[v _HIBEAM_OFF `(v ~T0 @X0 0 ef ]
-"435 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 435:     struct {
-[s S39 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S39 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
-"434
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 434: typedef union {
-[u S38 `S39 1 ]
-[n S38 . . ]
-"446
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 446: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x00C)));
-[v _PORTAbits `VS38 ~T0 @X0 0 e@12 ]
+"2373 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 2373: extern volatile unsigned char LATE __attribute__((address(0x110)));
+[v _LATE `Vuc ~T0 @X0 0 e@272 ]
+"2187
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 2187: extern volatile unsigned char LATA __attribute__((address(0x10C)));
+[v _LATA `Vuc ~T0 @X0 0 e@268 ]
+"2249
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 2249: extern volatile unsigned char LATB __attribute__((address(0x10D)));
+[v _LATB `Vuc ~T0 @X0 0 e@269 ]
+"2311
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 2311: extern volatile unsigned char LATC __attribute__((address(0x10E)));
+[v _LATC `Vuc ~T0 @X0 0 e@270 ]
+"1408
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1408: extern volatile unsigned char TRISE __attribute__((address(0x090)));
+[v _TRISE `Vuc ~T0 @X0 0 e@144 ]
+"1222
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1222: extern volatile unsigned char TRISA __attribute__((address(0x08C)));
+[v _TRISA `Vuc ~T0 @X0 0 e@140 ]
+"1284
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1284: extern volatile unsigned char TRISB __attribute__((address(0x08D)));
+[v _TRISB `Vuc ~T0 @X0 0 e@141 ]
+"1346
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1346: extern volatile unsigned char TRISC __attribute__((address(0x08E)));
+[v _TRISC `Vuc ~T0 @X0 0 e@142 ]
+"3129
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3129: extern volatile unsigned char ANSELB __attribute__((address(0x18D)));
+[v _ANSELB `Vuc ~T0 @X0 0 e@397 ]
+"3071
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3071: extern volatile unsigned char ANSELA __attribute__((address(0x18C)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@396 ]
+"3766
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3766: extern volatile unsigned char WPUE __attribute__((address(0x210)));
+[v _WPUE `Vuc ~T0 @X0 0 e@528 ]
+"3696
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3696: extern volatile unsigned char WPUB __attribute__((address(0x20D)));
+[v _WPUB `Vuc ~T0 @X0 0 e@525 ]
+"1600
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1600:     struct {
+[s S87 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S87 . PS0 PS1 PS2 PSA TMR0SE TMR0CS INTEDG nWPUEN ]
+"1610
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1610:     struct {
+[s S88 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S88 . PS . T0SE T0CS ]
+"1599
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1599: typedef union {
+[u S86 `S87 1 `S88 1 ]
+[n S86 . . . ]
+"1617
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1617: extern volatile OPTION_REGbits_t OPTION_REGbits __attribute__((address(0x095)));
+[v _OPTION_REGbits `VS86 ~T0 @X0 0 e@149 ]
+"3015
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 3015: extern volatile unsigned char APFCON __attribute__((address(0x11D)));
+[v _APFCON `Vuc ~T0 @X0 0 e@285 ]
 "54 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -613,294 +548,69 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7099
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 7099: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"61 D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h: 61: uint8_t SIGNAL_Data[8];
-[v _SIGNAL_Data `uc ~T0 @X0 -> 8 `i e ]
-"63
-[; ;D:\yiming\00work\FR752_V05.X\cmake\FR752\default\..\..\../mcc_generated_files/LINDrivers/lin_app.h: 63: const lin_rx_cmd_t scheduleTable[] = {
-[v _scheduleTable `CS3 ~T0 @X0 -> -> 1 `i `ux e ]
-[i _scheduleTable
-:U ..
-:U ..
--> . `E3230 0 `uc
-. `E48 1
--> -> 8 `i `uc
-&U _SIGNAL_Data
-..
-..
-]
-"60 D:\yiming\00work\FR752_V05.X\main.c
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 60: void AutoBaud_Detect_ON(void) {
-[v _AutoBaud_Detect_ON `(v ~T0 @X0 1 ef ]
+"55 D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 55: void PIN_MANAGER_Initialize(void)
+[v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
+"56
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 56: {
 {
-[e :U _AutoBaud_Detect_ON ]
+[e :U _PIN_MANAGER_Initialize ]
 [f ]
+"60
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 60:     LATE = 0x00;
+[e = _LATE -> -> 0 `i `uc ]
 "61
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 61:   BAUDCONbits.ABDOVF = 0;
-[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 61:     LATA = 0x00;
+[e = _LATA -> -> 0 `i `uc ]
 "62
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 62:   BAUDCONbits.ABDEN = 1;
-[e = . . _BAUDCONbits 0 0 -> -> 1 `i `uc ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 62:     LATB = 0x00;
+[e = _LATB -> -> 0 `i `uc ]
 "63
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 63:   BAUDCONbits.WUE = 1;
-[e = . . _BAUDCONbits 0 1 -> -> 1 `i `uc ]
-"64
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 64: }
-[e :UE 365 ]
-}
-"67
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 67: void AutoBaud_Detect(void) {
-[v _AutoBaud_Detect `(v ~T0 @X0 1 ef ]
-{
-[e :U _AutoBaud_Detect ]
-[f ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 63:     LATC = 0x00;
+[e = _LATC -> -> 0 `i `uc ]
 "68
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 68:   while (1) {
-[e :U 368 ]
-{
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 68:     TRISE = 0x08;
+[e = _TRISE -> -> 8 `i `uc ]
 "69
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 69:     AutoBaud_Detect_ON();
-[e ( _AutoBaud_Detect_ON ..  ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 69:     TRISA = 0xFB;
+[e = _TRISA -> -> 251 `i `uc ]
 "70
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 70:     while (!BAUDCONbits.ABDOVF)
-[e $U 370  ]
-[e :U 371 ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 70:     TRISB = 0xFF;
+[e = _TRISB -> -> 255 `i `uc ]
 "71
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 71:     {
-{
-"72
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 72:       if (!BAUDCONbits.ABDEN)
-[e $ ! ! != -> . . _BAUDCONbits 0 0 `i -> 0 `i 373  ]
-"73
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 73:       {
-{
-"74
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 74:         break;
-[e $U 372  ]
-"75
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 75:       }
-}
-[e :U 373 ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 71:     TRISC = 0xBB;
+[e = _TRISC -> -> 187 `i `uc ]
 "76
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 76:     }
-}
-[e :U 370 ]
-"70
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 70:     while (!BAUDCONbits.ABDOVF)
-[e $ ! != -> . . _BAUDCONbits 0 7 `i -> 0 `i 371  ]
-[e :U 372 ]
-"79
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 79:     if (!BAUDCONbits.ABDOVF)
-[e $ ! ! != -> . . _BAUDCONbits 0 7 `i -> 0 `i 374  ]
-"80
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 80:     {
-{
-"81
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 81:       break;
-[e $U 369  ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 76:     ANSELB = 0x3F;
+[e = _ANSELB -> -> 63 `i `uc ]
+"77
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 77:     ANSELA = 0x2A;
+[e = _ANSELA -> -> 42 `i `uc ]
 "82
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 82:     }
-}
-[e :U 374 ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 82:     WPUE = 0x00;
+[e = _WPUE -> -> 0 `i `uc ]
 "83
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 83:   }
-}
-[e :U 367 ]
-[e $U 368  ]
-[e :U 369 ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 83:     WPUB = 0x00;
+[e = _WPUB -> -> 0 `i `uc ]
 "84
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 84: }
-[e :UE 366 ]
-}
-"87
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 87: void Clear_No_Call_Warning(void) {
-[v _Clear_No_Call_Warning `(v ~T0 @X0 1 ef ]
-{
-[e :U _Clear_No_Call_Warning ]
-[f ]
-"88
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 88:   uint8_t i = 0;
-[v _i `uc ~T0 @X0 1 a ]
-[e = _i -> -> 0 `i `uc ]
-"89
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 89:   if (i == 1) {
-[e $ ! == -> _i `i -> 1 `i 376  ]
-{
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 84:     OPTION_REGbits.nWPUEN = 1;
+[e = . . _OPTION_REGbits 0 7 -> -> 1 `i `uc ]
 "90
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 90:     TMR0_Reload();
-[e ( _TMR0_Reload ..  ]
-"91
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 91:     TMR0_ReadTimer();
-[e ( _TMR0_ReadTimer ..  ]
-"92
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 92:   } else if (i == 2) {
-}
-[e $U 377  ]
-[e :U 376 ]
-[e $ ! == -> _i `i -> 2 `i 378  ]
-{
-"93
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 93:     PIN_MANAGER_IOC();
-[e ( _PIN_MANAGER_IOC ..  ]
-"94
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 94:   } else if (i == 3) {
-}
-[e $U 379  ]
-[e :U 378 ]
-[e $ ! == -> _i `i -> 3 `i 380  ]
-{
-"95
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 95:     EUSART_get_last_status();
-[e ( _EUSART_get_last_status ..  ]
-"96
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 96:     EUSART_is_tx_done();
-[e ( _EUSART_is_tx_done ..  ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 90:     APFCON = 0x00;
+[e = _APFCON -> -> 0 `i `uc ]
 "97
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 97:     EUSART_is_tx_ready();
-[e ( _EUSART_is_tx_ready ..  ]
-"98
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 98:   } else if (i == 4) {
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 97: }
+[e :UE 354 ]
 }
-[e $U 381  ]
-[e :U 380 ]
-[e $ ! == -> _i `i -> 4 `i 382  ]
-{
 "99
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 99:     TMR2_HasOverflowOccured();
-[e ( _TMR2_HasOverflowOccured ..  ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 99: void PIN_MANAGER_IOC(void)
+[v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
 "100
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 100:     TMR2_LoadPeriodRegister(0);
-[e ( _TMR2_LoadPeriodRegister (1 -> -> 0 `i `uc ]
-"101
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 101:     TMR2_WriteTimer(0);
-[e ( _TMR2_WriteTimer (1 -> -> 0 `i `uc ]
-"102
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 102:     TMR2_ReadTimer();
-[e ( _TMR2_ReadTimer ..  ]
-"103
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 103:     TMR2_StopTimer();
-[e ( _TMR2_StopTimer ..  ]
-"104
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 104:     TMR2_StartTimer();
-[e ( _TMR2_StartTimer ..  ]
-"105
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 105:   } else if (i == 5) {
-}
-[e $U 383  ]
-[e :U 382 ]
-[e $ ! == -> _i `i -> 5 `i 384  ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 100: {
 {
-"106
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 106:     PIN_MANAGER_IOC();
-[e ( _PIN_MANAGER_IOC ..  ]
-"107
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 107:   } else if (i == 6) {
-}
-[e $U 385  ]
-[e :U 384 ]
-[e $ ! == -> _i `i -> 6 `i 386  ]
-{
-"108
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 108:     DRL_ON();
-[e ( _DRL_ON ..  ]
-"109
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 109:     DRL_OFF();
-[e ( _DRL_OFF ..  ]
-"110
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 110:   } else if (i == 7) {
-}
-[e $U 387  ]
-[e :U 386 ]
-[e $ ! == -> _i `i -> 7 `i 388  ]
-{
-"111
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 111:     AutoBaud_Detect();
-[e ( _AutoBaud_Detect ..  ]
-"112
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 112:   }
-}
-[e :U 388 ]
-[e :U 387 ]
-[e :U 385 ]
-[e :U 383 ]
-[e :U 381 ]
-[e :U 379 ]
-[e :U 377 ]
-"113
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 113: }
-[e :UE 375 ]
-}
-[v $root$_main `(v ~T0 @X0 0 e ]
-"115
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 115: int main(void) {
-[v _main `(i ~T0 @X0 1 ef ]
-{
-[e :U _main ]
+[e :U _PIN_MANAGER_IOC ]
 [f ]
-"117
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 117:   SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"133
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 133:   (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"135
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 135:   (INTCONbits.PEIE = 1);
-[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-"137
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 137:   Clear_No_Call_Warning();
-[e ( _Clear_No_Call_Warning ..  ]
-"138
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 138:   while (1) {
-[e :U 391 ]
-{
-"140
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 140:     LIN_handler();
-[e ( _LIN_handler ..  ]
-"142
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 142:     if (LIN_signalTimeoutOccurred()) {
-[e $ ! != -> ( _LIN_signalTimeoutOccurred ..  `i -> 0 `i 393  ]
-{
-"143
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 143:       POS_ON();
-[e ( _POS_ON ..  ]
-"144
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 144:       HIBEAM_OFF();
-[e ( _HIBEAM_OFF ..  ]
-"146
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 146:     }
-}
-[e :U 393 ]
-"147
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 147:     if (PORTAbits.RA4) {
-[e $ ! != -> . . _PORTAbits 0 4 `i -> 0 `i 394  ]
-{
-"148
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 148:       DRL_ON;
-[e &U _DRL_ON ]
-"149
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 149:     } else {
-}
-[e $U 395  ]
-[e :U 394 ]
-{
-"150
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 150:       DRL_OFF;
-[e &U _DRL_OFF ]
-"151
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 151:     }
-}
-[e :U 395 ]
-"152
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 152:   }
-}
-[e :U 390 ]
-[e $U 391  ]
-[e :U 392 ]
-"153
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 153:   return 0;
-[e ) -> 0 `i ]
-[e $UE 389  ]
-"154
-[; ;D:\yiming\00work\FR752_V05.X\main.c: 154: }
-[e :UE 389 ]
+"101
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c: 101: }
+[e :UE 355 ]
 }

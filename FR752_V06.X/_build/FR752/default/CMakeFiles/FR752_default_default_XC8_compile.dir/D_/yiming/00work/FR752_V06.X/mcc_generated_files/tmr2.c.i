@@ -1,4 +1,4 @@
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\main.c"
+# 1 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\tmr2.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,218 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\main.c" 2
-# 50 "D:\\yiming\\00work\\FR752_V05.X\\main.c"
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/LINDrivers/lin_slave.h" 1
-# 20 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/LINDrivers/lin_slave.h"
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 1 3
-
-
-
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 5 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
-# 26 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 133 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned short uintptr_t;
-# 148 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef short intptr_t;
-# 164 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef signed char int8_t;
-
-
-
-
-typedef short int16_t;
-
-
-
-
-typedef __int24 int24_t;
-
-
-
-
-typedef long int32_t;
-
-
-
-
-
-typedef long long int64_t;
-# 194 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long intmax_t;
-
-
-
-
-
-typedef unsigned char uint8_t;
-
-
-
-
-typedef unsigned short uint16_t;
-
-
-
-
-typedef __uint24 uint24_t;
-
-
-
-
-typedef unsigned long uint32_t;
-
-
-
-
-
-typedef unsigned long long uint64_t;
-# 235 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long long uintmax_t;
-# 27 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
-
-typedef int8_t int_fast8_t;
-
-typedef int64_t int_fast64_t;
-
-
-typedef int8_t int_least8_t;
-typedef int16_t int_least16_t;
-
-typedef int24_t int_least24_t;
-typedef int24_t int_fast24_t;
-
-typedef int32_t int_least32_t;
-
-typedef int64_t int_least64_t;
-
-
-typedef uint8_t uint_fast8_t;
-
-typedef uint64_t uint_fast64_t;
-
-
-typedef uint8_t uint_least8_t;
-typedef uint16_t uint_least16_t;
-
-typedef uint24_t uint_least24_t;
-typedef uint24_t uint_fast24_t;
-
-typedef uint32_t uint_least32_t;
-
-typedef uint64_t uint_least64_t;
-# 148 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/stdint.h" 1 3
-typedef int16_t int_fast16_t;
-typedef int32_t int_fast32_t;
-typedef uint16_t uint_fast16_t;
-typedef uint32_t uint_fast32_t;
-# 149 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
-# 20 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/LINDrivers/lin_slave.h" 2
-
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdbool.h" 1 3
-# 21 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/LINDrivers/lin_slave.h" 2
-
-
-
-typedef enum {
-    LIN_RX_IDLE,
-    LIN_RX_BREAK,
-    LIN_RX_SYNC,
-    LIN_RX_PID,
-    LIN_RX_DATA,
-    LIN_RX_CHECKSUM,
-    LIN_RX_TX_DATA,
-    LIN_RX_RDY,
-    LIN_RX_ERROR,
-    LIN_RX_WAIT
-}lin_rx_state_t;
-
-typedef enum {
-    TRANSMIT,
-    RECEIVE,
-    ERROR
-}lin_packet_type_t;
-
-typedef enum {
-    CMD,
-    TYPE,
-    LENGTH
-}lin_sch_param_t;
-
-typedef union {
-    struct {
-        uint8_t PID;
-        uint8_t data[8];
-        uint8_t checksum;
-        lin_packet_type_t type;
-        uint8_t length;
-    };
-    uint8_t rawPacket[13];
-}lin_packet_t;
-
-typedef struct {
-    uint8_t cmd;
-    lin_packet_type_t type;
-    uint8_t length;
-    uint8_t* data;
-}lin_rx_cmd_t;
-
-typedef union {
-    struct {
-        unsigned ID0: 1;
-        unsigned ID1: 1;
-        unsigned ID2: 1;
-        unsigned ID3: 1;
-        unsigned ID4: 1;
-        unsigned ID5: 1;
-        unsigned P0: 1;
-        unsigned P1: 1;
-    };
-    uint8_t rawPID;
-}lin_pid_t;
-
-
-void LIN_init(uint8_t tableLength, const lin_rx_cmd_t* const command, void (*processData)(void));
-
-void LIN_queuePacket(uint8_t cmd);
-
-void LIN_sendPacket(uint8_t length, uint8_t pid, uint8_t* data);
-
-uint8_t LIN_getPacket(uint8_t* data);
-
-uint8_t LIN_getFromTable(uint8_t cmd, lin_sch_param_t param);
-
-lin_rx_state_t LIN_handler(void);
-
-_Bool LIN_checkPID(uint8_t pid);
-
-uint8_t LIN_getChecksum(uint8_t length, uint8_t pid, uint8_t* data);
-
-uint8_t LIN_calcParity(uint8_t CMD);
-
-
-void LIN_startTimer(uint8_t timeout);
-
-void LIN_timerHandler(void);
-
-void LIN_setTimerHandler(void);
-
-void LIN_stopTimer(void);
-
-void LIN_enableRx(void);
-
-void LIN_disableRx(void);
-
-_Bool LIN_breakCheck(void);
-
-_Bool LIN_signalTimeoutOccurred(void);
-# 50 "D:\\yiming\\00work\\FR752_V05.X\\main.c" 2
-
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h" 1
-# 49 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h"
+# 1 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\tmr2.c" 2
+# 51 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\tmr2.c"
 # 1 "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -231,7 +21,16 @@ extern double __fpnormalize(double);
 
 
 # 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 1 3
-# 10 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 3
+
+
+
+# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 5 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
+
+
+
+
+
 # 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\features.h" 1 3
 # 11 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
 # 21 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 3
@@ -240,6 +39,10 @@ extern double __fpnormalize(double);
 typedef long int wchar_t;
 # 128 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
+# 174 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __int24 int24_t;
+# 210 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __uint24 uint24_t;
 # 22 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
 
 int atoi (const char *);
@@ -5027,425 +4830,171 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 2 3
-# 49 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h" 2
+# 51 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\tmr2.c" 2
 
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/device_config.h" 1
-# 50 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h" 2
-
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/pin_manager.h" 1
-# 144 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-# 156 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_IOC(void);
-# 51 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h" 2
-
-
-
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\conio.h" 1 3
-
-
-
-
-
-
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 1 3
-# 24 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 3
+# 1 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/tmr2.h" 1
+# 54 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/tmr2.h"
+# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 1 3
+# 26 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
 # 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 12 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef void * va_list[1];
+# 133 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned short uintptr_t;
+# 148 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef short intptr_t;
+# 164 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef signed char int8_t;
 
 
 
 
-typedef void * __isoc_va_list[1];
-# 143 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef short ssize_t;
-# 255 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long off_t;
-# 409 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef struct _IO_FILE FILE;
-# 25 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 2 3
-# 52 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 3
-typedef union _G_fpos64_t {
- char __opaque[16];
- double __align;
-} fpos_t;
-
-extern FILE *const stdin;
-extern FILE *const stdout;
-extern FILE *const stderr;
+typedef short int16_t;
+# 179 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long int32_t;
 
 
 
 
 
-FILE *fopen(const char *restrict, const char *restrict);
-FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
-int fclose(FILE *);
-
-int remove(const char *);
-int rename(const char *, const char *);
-
-int feof(FILE *);
-int ferror(FILE *);
-int fflush(FILE *);
-void clearerr(FILE *);
-
-int fseek(FILE *, long, int);
-long ftell(FILE *);
-void rewind(FILE *);
-
-int fgetpos(FILE *restrict, fpos_t *restrict);
-int fsetpos(FILE *, const fpos_t *);
-
-size_t fread(void *restrict, size_t, size_t, FILE *restrict);
-size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
-
-int fgetc(FILE *);
-int getc(FILE *);
-int getchar(void);
+typedef long long int64_t;
+# 194 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long intmax_t;
 
 
 
 
 
-int ungetc(int, FILE *);
-int getch(void);
-
-int fputc(int, FILE *);
-int putc(int, FILE *);
-int putchar(int);
+typedef unsigned char uint8_t;
 
 
 
 
-
-void putch(char);
-
-char *fgets(char *restrict, int, FILE *restrict);
-
-char *gets(char *);
-
-
-int fputs(const char *restrict, FILE *restrict);
-int puts(const char *);
-
-__attribute__((__format__(__printf__, 1, 2)))
-int printf(const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int fprintf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int sprintf(char *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 3, 4)))
-int snprintf(char *restrict, size_t, const char *restrict, ...);
-
-__attribute__((__format__(__printf__, 1, 0)))
-int vprintf(const char *restrict, __isoc_va_list);
-int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 2, 0)))
-int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 3, 0)))
-int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
-
-__attribute__((__format__(__scanf__, 1, 2)))
-int scanf(const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int fscanf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int sscanf(const char *restrict, const char *restrict, ...);
-
-__attribute__((__format__(__scanf__, 1, 0)))
-int vscanf(const char *restrict, __isoc_va_list);
-int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__scanf__, 2, 0)))
-int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
-
-void perror(const char *);
-
-int setvbuf(FILE *restrict, char *restrict, int, size_t);
-void setbuf(FILE *restrict, char *restrict);
-
-char *tmpnam(char *);
-FILE *tmpfile(void);
-
-
-
-
-FILE *fmemopen(void *restrict, size_t, const char *restrict);
-FILE *open_memstream(char **, size_t *);
-FILE *fdopen(int, const char *);
-FILE *popen(const char *, const char *);
-int pclose(FILE *);
-int fileno(FILE *);
-int fseeko(FILE *, off_t, int);
-off_t ftello(FILE *);
-int dprintf(int, const char *restrict, ...);
-int vdprintf(int, const char *restrict, __isoc_va_list);
-void flockfile(FILE *);
-int ftrylockfile(FILE *);
-void funlockfile(FILE *);
-int getc_unlocked(FILE *);
-int getchar_unlocked(void);
-int putc_unlocked(int, FILE *);
-int putchar_unlocked(int);
-ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
-ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
-int renameat(int, const char *, int, const char *);
-char *ctermid(char *);
+typedef unsigned short uint16_t;
+# 215 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uint32_t;
 
 
 
 
 
+typedef unsigned long long uint64_t;
+# 235 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long long uintmax_t;
+# 27 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
+
+typedef int8_t int_fast8_t;
+
+typedef int64_t int_fast64_t;
 
 
-char *tempnam(const char *, const char *);
-# 8 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\conio.h" 2 3
-# 54 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h" 2
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
 
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/interrupt_manager.h" 1
-# 55 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h" 2
+typedef int24_t int_least24_t;
+typedef int24_t int_fast24_t;
 
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/epwm1.h" 1
-# 96 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/epwm1.h"
-void EPWM1_Initialize(void);
-# 122 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/epwm1.h"
-void EPWM1_LoadDutyValue(uint16_t dutyValue);
-# 56 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h" 2
+typedef int32_t int_least32_t;
 
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr2.h" 1
-# 103 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr2.h"
+typedef int64_t int_least64_t;
+
+
+typedef uint8_t uint_fast8_t;
+
+typedef uint64_t uint_fast64_t;
+
+
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+typedef uint24_t uint_fast24_t;
+
+typedef uint32_t uint_least32_t;
+
+typedef uint64_t uint_least64_t;
+# 148 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
+# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/stdint.h" 1 3
+typedef int16_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint16_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 149 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
+# 54 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/tmr2.h" 2
+
+# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdbool.h" 1 3
+# 55 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/tmr2.h" 2
+# 103 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/tmr2.h"
 void TMR2_Initialize(void);
-# 132 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr2.h"
+# 132 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/tmr2.h"
 void TMR2_StartTimer(void);
-# 164 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr2.h"
+# 164 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/tmr2.h"
 void TMR2_StopTimer(void);
-# 199 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr2.h"
+# 199 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/tmr2.h"
 uint8_t TMR2_ReadTimer(void);
-# 238 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr2.h"
+# 238 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/tmr2.h"
 void TMR2_WriteTimer(uint8_t timerVal);
-# 290 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr2.h"
+# 290 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/tmr2.h"
 void TMR2_LoadPeriodRegister(uint8_t periodVal);
-# 325 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr2.h"
+# 325 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/tmr2.h"
 _Bool TMR2_HasOverflowOccured(void);
-# 57 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h" 2
-
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr0.h" 1
-# 98 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr0.h"
-void TMR0_Initialize(void);
-# 129 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr0.h"
-uint8_t TMR0_ReadTimer(void);
-# 168 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr0.h"
-void TMR0_WriteTimer(uint8_t timerVal);
-# 204 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr0.h"
-void TMR0_Reload(void);
-# 219 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr0.h"
-void TMR0_ISR(void);
-# 238 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr0.h"
- void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 256 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr0.h"
-extern void (*TMR0_InterruptHandler)(void);
-# 274 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/tmr0.h"
-void TMR0_DefaultInterruptHandler(void);
-# 58 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h" 2
-
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h" 1
-# 75 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-typedef union {
-    struct {
-        unsigned perr : 1;
-        unsigned ferr : 1;
-        unsigned oerr : 1;
-        unsigned reserved : 5;
-    };
-    uint8_t status;
-}eusart_status_t;
+# 52 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\tmr2.c" 2
+# 62 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\tmr2.c"
+void TMR2_Initialize(void)
+{
 
 
 
-
-extern volatile uint8_t eusartTxBufferRemaining;
-extern volatile uint8_t eusartRxCount;
+    PR2 = 0x7C;
 
 
+    TMR2 = 0x00;
 
 
-extern void (*EUSART_TxDefaultInterruptHandler)(void);
-extern void (*EUSART_RxDefaultInterruptHandler)(void);
-# 117 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-void EUSART_Initialize(void);
-# 165 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-_Bool EUSART_is_tx_ready(void);
-# 213 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-_Bool EUSART_is_rx_ready(void);
-# 260 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-_Bool EUSART_is_tx_done(void);
-# 308 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-eusart_status_t EUSART_get_last_status(void);
-# 328 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-uint8_t EUSART_Read(void);
-# 348 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-void EUSART_Write(uint8_t txData);
-# 369 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-void EUSART_Transmit_ISR(void);
-# 390 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-void EUSART_Receive_ISR(void);
-# 411 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-void EUSART_RxDataHandler(void);
-# 429 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 447 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 465 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-void EUSART_SetErrorHandler(void (* interruptHandler)(void));
-# 485 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-void EUSART_SetTxInterruptHandler(void (* interruptHandler)(void));
-# 505 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/eusart.h"
-void EUSART_SetRxInterruptHandler(void (* interruptHandler)(void));
-# 59 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h" 2
-
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/LINDrivers/lin_app.h" 1
-# 24 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/LINDrivers/lin_app.h"
-typedef union {
-  struct {
-    _Bool fPOS : 1;
-    _Bool fDRL : 1;
-    _Bool fLOBEAM : 1;
-    _Bool fHIBEAM : 1;
-    _Bool fLEFT : 1;
-    _Bool fRIGHT : 1;
-    _Bool b6 : 1;
-    _Bool b7 : 1;
-  };
-  uint8_t Byte;
-} LampFlags_t;
-
-typedef enum {
-  eOffDayP=0x09,
-  eOffDayN=0x29,
-  eParkDayP=0x0A,
-  eParkDayN=0x2A,
-  eLobeamDayP=0x0B,
-  eLobeamDayN=0x2B,
-  eAutoDayP=0x0C,
-  eAutoDayN=0x4C,
-  eOffNightP=0x11,
-  eOffNightN=0x31,
-  eParkNightP=0x12,
-  eParkNightN=0x32,
-  eLobeamNightP=0x13,
-  eLobeamNightN=0x33,
-  eAutoNightP=0x94,
-  eAutoNightN=0xB4
-}LampControl_t;
-
-typedef enum {
-    SIGNAL = 0x01
-}lin_cmd_t;
-
-uint8_t SIGNAL_Data[8];
-
-const lin_rx_cmd_t scheduleTable[] = {
-
-    {SIGNAL, RECEIVE, 8, SIGNAL_Data }
-};
+    PIR1bits.TMR2IF = 0;
 
 
-void LIN_Slave_Initialize(void);
-
-void processLIN(void);
-
-void POS_ON(void);
-void DRL_ON(void);
-void DRL_OFF(void);
-void HIBEAM_OFF(void);
-# 60 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h" 2
-# 75 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-# 88 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h"
-void OSCILLATOR_Initialize(void);
-# 100 "D:\\yiming\\00work\\FR752_V05.X\\cmake\\FR752\\default\\..\\..\\../mcc_generated_files/mcc.h"
-void WDT_Initialize(void);
-# 51 "D:\\yiming\\00work\\FR752_V05.X\\main.c" 2
-# 60 "D:\\yiming\\00work\\FR752_V05.X\\main.c"
-void AutoBaud_Detect_ON(void) {
-  BAUDCONbits.ABDOVF = 0;
-  BAUDCONbits.ABDEN = 1;
-  BAUDCONbits.WUE = 1;
+    T2CON = 0x07;
 }
 
+void TMR2_StartTimer(void)
+{
 
-void AutoBaud_Detect(void) {
-  while (1) {
-    AutoBaud_Detect_ON();
-    while (!BAUDCONbits.ABDOVF)
+    T2CONbits.TMR2ON = 1;
+}
+
+void TMR2_StopTimer(void)
+{
+
+    T2CONbits.TMR2ON = 0;
+}
+
+uint8_t TMR2_ReadTimer(void)
+{
+    uint8_t readVal;
+
+    readVal = TMR2;
+
+    return readVal;
+}
+
+void TMR2_WriteTimer(uint8_t timerVal)
+{
+
+    TMR2 = timerVal;
+}
+
+void TMR2_LoadPeriodRegister(uint8_t periodVal)
+{
+   PR2 = periodVal;
+}
+
+_Bool TMR2_HasOverflowOccured(void)
+{
+
+    _Bool status = PIR1bits.TMR2IF;
+    if(status)
     {
-      if (!BAUDCONbits.ABDEN)
-      {
-        break;
-      }
+
+        PIR1bits.TMR2IF = 0;
     }
-
-
-    if (!BAUDCONbits.ABDOVF)
-    {
-      break;
-    }
-  }
-}
-
-
-void Clear_No_Call_Warning(void) {
-  uint8_t i = 0;
-  if (i == 1) {
-    TMR0_Reload();
-    TMR0_ReadTimer();
-  } else if (i == 2) {
-    PIN_MANAGER_IOC();
-  } else if (i == 3) {
-    EUSART_get_last_status();
-    EUSART_is_tx_done();
-    EUSART_is_tx_ready();
-  } else if (i == 4) {
-    TMR2_HasOverflowOccured();
-    TMR2_LoadPeriodRegister(0);
-    TMR2_WriteTimer(0);
-    TMR2_ReadTimer();
-    TMR2_StopTimer();
-    TMR2_StartTimer();
-  } else if (i == 5) {
-    PIN_MANAGER_IOC();
-  } else if (i == 6) {
-    DRL_ON();
-    DRL_OFF();
-  } else if (i == 7) {
-    AutoBaud_Detect();
-  }
-}
-
-int main(void) {
-
-  SYSTEM_Initialize();
-# 133 "D:\\yiming\\00work\\FR752_V05.X\\main.c"
-  (INTCONbits.GIE = 1);
-
-  (INTCONbits.PEIE = 1);
-
-  Clear_No_Call_Warning();
-  while (1) {
-
-    LIN_handler();
-
-    if (LIN_signalTimeoutOccurred()) {
-      POS_ON();
-      HIBEAM_OFF();
-
-    }
-    if (PORTAbits.RA4) {
-      DRL_ON;
-    } else {
-      DRL_OFF;
-    }
-  }
-  return 0;
+    return status;
 }

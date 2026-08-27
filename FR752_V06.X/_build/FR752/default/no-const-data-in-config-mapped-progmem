@@ -3,12 +3,12 @@ Microchip MPLAB XC8 Compiler V2.46
 Linker command line:
 
 -W-3 --edf=c:\PROGRA~1\MICROC~1\xc8\v2.46\pic\dat\20240104201356_en.msgs \
-  -cn -h+D:\yiming\00work\FR752_V05.X\out\FR752\default.sym \
-  --cmf=D:\yiming\00work\FR752_V05.X\out\FR752\default.cmf -z -Q16F1936 \
-  -oC:\Users\t00904\AppData\Local\Temp\xcAsgl8.\driver_tmp_3.o \
+  -cn -h+D:\yiming\00work\FR752_V06.X\out\FR752\default.sym \
+  --cmf=D:\yiming\00work\FR752_V06.X\out\FR752\default.cmf -z -Q16F1936 \
+  -oC:\Users\t00904\AppData\Local\Temp\xcCsmoo.2\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mno-const-data-in-config-mapped-progmem \
-  --md=C:\Users\t00904\AppData\Local\Temp\xcAsgl8.\driver_tmp_0.dat -E1 \
+  --md=C:\Users\t00904\AppData\Local\Temp\xcCsmoo.2\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh \
   -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 \
   -ACOMMON=070h-07Fh -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh \
@@ -31,8 +31,8 @@ Linker command line:
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
   -DENTRY=2 -preset_vec=00h,intentry=04h,sivt,init,end_init -ppowerup=CODE \
   -pcinit=CODE -pfunctab=ENTRY -k \
-  C:\Users\t00904\AppData\Local\Temp\xcAsgl8.\driver_tmp_15.o \
-  D:\yiming\00work\FR752_V05.X\out\FR752\default.o 
+  C:\Users\t00904\AppData\Local\Temp\xcCsmoo.2\driver_tmp_15.o \
+  D:\yiming\00work\FR752_V06.X\out\FR752\default.o 
 
 Object code version is 3.11
 
@@ -41,12 +41,12 @@ Machine type is 16F1936
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\t00904\AppData\Local\Temp\xcAsgl8.\driver_tmp_15.o
+C:\Users\t00904\AppData\Local\Temp\xcCsmoo.2\driver_tmp_15.o
                 end_init                             38       38        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2        0       4
                 idloc                              8000     8000        4        0       5
-D:\yiming\00work\FR752_V05.X\out\FR752\default.o
+D:\yiming\00work\FR752_V06.X\out\FR752\default.o
                 cinit                                3A       3A       1A        8       0
                 intentry                              4        4       34        8       0
                 config                             8007     8007        2        0       4
@@ -1039,7 +1039,29 @@ wtemp0                                         (abs)        0007E
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\tmr0.c
+c:\PROGRA~1\MICROC~1\xc8\v2.46\pic\sources\c99\common\memcpy.c
+		_memcpy        		CODE           	045F	0000	37
+
+c:\PROGRA~1\MICROC~1\xc8\v2.46\pic\sources\c99\common\memcpy.c estimated size: 37
+
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr2.c
+		_TMR2_LoadPeriodRegister		CODE           	06C5	0000	5
+		_TMR2_Initialize		CODE           	0654	0000	8
+		_TMR2_StopTimer		CODE           	06E9	0000	3
+		_TMR2_WriteTimer		CODE           	06C0	0000	5
+		_TMR2_StartTimer		CODE           	06EC	0000	3
+		_TMR2_ReadTimer		CODE           	06EF	0000	3
+		_TMR2_HasOverflowOccured		CODE           	0634	0000	12
+
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr2.c estimated size: 39
+
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c
+		_PIN_MANAGER_Initialize		CODE           	0509	0000	27
+		_PIN_MANAGER_IOC		CODE           	06FD	0000	1
+
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\pin_manager.c estimated size: 28
+
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c
 		_TMR0_SetInterruptHandler		CODE           	0688	0000	6
 		_TMR0_Reload   		CODE           	06D7	0000	4
 		_TMR0_DefaultInterruptHandler		CODE           	06FF	0000	1
@@ -1048,16 +1070,33 @@ D:\yiming\00work\FR752_V05.X\mcc_generated_files\tmr0.c
 		_TMR0_ISR      		CODE           	05F0	0000	16
 		_TMR0_Initialize		CODE           	05B6	0000	20
 
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\tmr0.c estimated size: 55
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c estimated size: 55
 
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\mcc.c
-		_WDT_Initialize		CODE           	06D3	0000	4
-		_OSCILLATOR_Initialize		CODE           	0628	0000	12
-		_SYSTEM_Initialize		CODE           	0558	0000	25
+shared
+		_scheduleTable 		STRCODE        	06CF	0000	4
+		__initialization		CODE           	003A	0000	22
 
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\mcc.c estimated size: 41
+shared estimated size: 26
 
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\LINDrivers\lin_slave.c
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c
+		_processLIN    		CODE           	01F2	0000	113
+		_POS_OFF       		CODE           	0674	0000	7
+		_HIBEAM_ON     		CODE           	06E3	0000	3
+		_HIBEAM_OFF    		CODE           	06E6	0000	3
+		_DRL_ON        		CODE           	066C	0000	8
+		_LIN_Slave_Initialize		CODE           	060E	0000	13
+		_POS_ON        		CODE           	0664	0000	8
+		_DRL_OFF       		CODE           	067B	0000	7
+
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_app.c estimated size: 162
+
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\epwm1.c
+		_EPWM1_LoadDutyValue		CODE           	0589	0000	23
+		_EPWM1_Initialize		CODE           	061B	0000	13
+
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\epwm1.c estimated size: 36
+
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_slave.c
 		_LIN_init      		CODE           	05A0	0000	22
 		_LIN_stopTimer 		CODE           	06AC	0000	5
 		_LIN_timerHandler		CODE           	03E2	0000	47
@@ -1076,46 +1115,34 @@ D:\yiming\00work\FR752_V05.X\mcc_generated_files\LINDrivers\lin_slave.c
 		_LIN_calcParity		CODE           	016C	0000	134
 		_LIN_enableRx  		CODE           	06B6	0000	5
 
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\LINDrivers\lin_slave.c estimated size: 909
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\LINDrivers\lin_slave.c estimated size: 909
 
-c:\PROGRA~1\MICROC~1\xc8\v2.46\pic\sources\c99\common\memcpy.c
-		_memcpy        		CODE           	045F	0000	37
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\interrupt_manager.c
+		_INTERRUPT_InterruptManager		CODE           	0004	0000	52
 
-c:\PROGRA~1\MICROC~1\xc8\v2.46\pic\sources\c99\common\memcpy.c estimated size: 37
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\interrupt_manager.c estimated size: 52
 
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c
-		_EPWM1_LoadDutyValue		CODE           	0589	0000	23
-		_EPWM1_Initialize		CODE           	061B	0000	13
+c:\PROGRA~1\MICROC~1\xc8\v2.46\pic\sources\c99\common\memset.c
+		_memset        		CODE           	0524	0000	26
 
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c estimated size: 36
+c:\PROGRA~1\MICROC~1\xc8\v2.46\pic\sources\c99\common\memset.c estimated size: 26
 
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c
-		_PIN_MANAGER_Initialize		CODE           	0509	0000	27
-		_PIN_MANAGER_IOC		CODE           	06FD	0000	1
-
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\pin_manager.c estimated size: 28
-
-D:\yiming\00work\FR752_V05.X\main.c
+D:\yiming\00work\FR752_V06.X\main.c
 		_Clear_No_Call_Warning		CODE           	06FC	0000	1
 		_main          		CODE           	04EB	0000	30
 		_AutoBaud_Detect		CODE           	05DD	0000	19
 		_AutoBaud_Detect_ON		CODE           	06CA	0000	5
 
-D:\yiming\00work\FR752_V05.X\main.c estimated size: 55
+D:\yiming\00work\FR752_V06.X\main.c estimated size: 55
 
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\LINDrivers\lin_app.c
-		_processLIN    		CODE           	01F2	0000	113
-		_POS_OFF       		CODE           	0674	0000	7
-		_HIBEAM_ON     		CODE           	06E3	0000	3
-		_HIBEAM_OFF    		CODE           	06E6	0000	3
-		_DRL_ON        		CODE           	066C	0000	8
-		_LIN_Slave_Initialize		CODE           	060E	0000	13
-		_POS_ON        		CODE           	0664	0000	8
-		_DRL_OFF       		CODE           	067B	0000	7
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c
+		_WDT_Initialize		CODE           	06D3	0000	4
+		_OSCILLATOR_Initialize		CODE           	0628	0000	12
+		_SYSTEM_Initialize		CODE           	0558	0000	25
 
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\LINDrivers\lin_app.c estimated size: 162
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\mcc.c estimated size: 41
 
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\eusart.c
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\eusart.c
 		_EUSART_SetRxInterruptHandler		CODE           	0694	0000	6
 		_EUSART_SetTxInterruptHandler		CODE           	068E	0000	6
 		_EUSART_Read   		CODE           	0439	0000	38
@@ -1135,32 +1162,5 @@ D:\yiming\00work\FR752_V05.X\mcc_generated_files\eusart.c
 		_EUSART_is_rx_ready		CODE           	064B	0000	9
 		_EUSART_is_tx_ready		CODE           	06FE	0000	1
 
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\eusart.c estimated size: 310
-
-shared
-		_scheduleTable 		STRCODE        	06CF	0000	4
-		__initialization		CODE           	003A	0000	22
-
-shared estimated size: 26
-
-c:\PROGRA~1\MICROC~1\xc8\v2.46\pic\sources\c99\common\memset.c
-		_memset        		CODE           	0524	0000	26
-
-c:\PROGRA~1\MICROC~1\xc8\v2.46\pic\sources\c99\common\memset.c estimated size: 26
-
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c
-		_INTERRUPT_InterruptManager		CODE           	0004	0000	52
-
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\interrupt_manager.c estimated size: 52
-
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\tmr2.c
-		_TMR2_LoadPeriodRegister		CODE           	06C5	0000	5
-		_TMR2_Initialize		CODE           	0654	0000	8
-		_TMR2_StopTimer		CODE           	06E9	0000	3
-		_TMR2_WriteTimer		CODE           	06C0	0000	5
-		_TMR2_StartTimer		CODE           	06EC	0000	3
-		_TMR2_ReadTimer		CODE           	06EF	0000	3
-		_TMR2_HasOverflowOccured		CODE           	0634	0000	12
-
-D:\yiming\00work\FR752_V05.X\mcc_generated_files\tmr2.c estimated size: 39
+D:\yiming\00work\FR752_V06.X\mcc_generated_files\eusart.c estimated size: 310
 

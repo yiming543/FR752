@@ -1,4 +1,4 @@
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files\\epwm1.c"
+# 1 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\pin_manager.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,10 @@
 # 1 "<built-in>" 2
 # 1 "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files\\epwm1.c" 2
-# 51 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files\\epwm1.c"
+# 1 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\pin_manager.c" 2
+# 49 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\pin_manager.c"
+# 1 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/pin_manager.h" 1
+# 54 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/pin_manager.h"
 # 1 "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -4830,132 +4832,62 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 2 3
-# 51 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files\\epwm1.c" 2
-
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/epwm1.h" 1
-# 55 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/epwm1.h"
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 1 3
-# 26 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 133 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned short uintptr_t;
-# 148 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef short intptr_t;
-# 164 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef signed char int8_t;
-
-
-
-
-typedef short int16_t;
-# 179 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long int32_t;
+# 54 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/pin_manager.h" 2
+# 144 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_Initialize (void);
+# 156 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_IOC(void);
+# 49 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\pin_manager.c" 2
 
 
 
 
 
-typedef long long int64_t;
-# 194 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long intmax_t;
 
-
-
-
-
-typedef unsigned char uint8_t;
-
-
-
-
-typedef unsigned short uint16_t;
-# 215 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long uint32_t;
-
-
-
-
-
-typedef unsigned long long uint64_t;
-# 235 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long long uintmax_t;
-# 27 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
-
-typedef int8_t int_fast8_t;
-
-typedef int64_t int_fast64_t;
-
-
-typedef int8_t int_least8_t;
-typedef int16_t int_least16_t;
-
-typedef int24_t int_least24_t;
-typedef int24_t int_fast24_t;
-
-typedef int32_t int_least32_t;
-
-typedef int64_t int_least64_t;
-
-
-typedef uint8_t uint_fast8_t;
-
-typedef uint64_t uint_fast64_t;
-
-
-typedef uint8_t uint_least8_t;
-typedef uint16_t uint_least16_t;
-
-typedef uint24_t uint_least24_t;
-typedef uint24_t uint_fast24_t;
-
-typedef uint32_t uint_least32_t;
-
-typedef uint64_t uint_least64_t;
-# 148 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/stdint.h" 1 3
-typedef int16_t int_fast16_t;
-typedef int32_t int_fast32_t;
-typedef uint16_t uint_fast16_t;
-typedef uint32_t uint_fast32_t;
-# 149 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
-# 55 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/epwm1.h" 2
-# 96 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/epwm1.h"
-void EPWM1_Initialize(void);
-# 122 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/epwm1.h"
-void EPWM1_LoadDutyValue(uint16_t dutyValue);
-# 52 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files\\epwm1.c" 2
-# 64 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files\\epwm1.c"
-void EPWM1_Initialize(void)
+void PIN_MANAGER_Initialize(void)
 {
 
 
 
- CCP1CON = 0x0C;
+    LATE = 0x00;
+    LATA = 0x00;
+    LATB = 0x00;
+    LATC = 0x00;
 
 
- ECCP1AS = 0x00;
 
 
- PWM1CON = 0x80;
+    TRISE = 0x08;
+    TRISA = 0xFB;
+    TRISB = 0xFF;
+    TRISC = 0xBB;
 
 
- PSTR1CON = 0x01;
 
 
- CCPR1H = 0x00;
+    ANSELB = 0x3F;
+    ANSELA = 0x2A;
 
 
- CCPR1L = 0x00;
 
 
- CCPTMRS0bits.C1TSEL = 0x0;
+    WPUE = 0x00;
+    WPUB = 0x00;
+    OPTION_REGbits.nWPUEN = 1;
+
+
+
+
+
+    APFCON = 0x00;
+
+
+
+
+
+
 }
 
-void EPWM1_LoadDutyValue(uint16_t dutyValue)
+void PIN_MANAGER_IOC(void)
 {
-
-    CCPR1L = ((dutyValue & 0x03FC)>>2);
-
-
-    CCP1CON = (uint8_t)((CCP1CON & 0xCF) | ((dutyValue & 0x0003)<<4));
 }

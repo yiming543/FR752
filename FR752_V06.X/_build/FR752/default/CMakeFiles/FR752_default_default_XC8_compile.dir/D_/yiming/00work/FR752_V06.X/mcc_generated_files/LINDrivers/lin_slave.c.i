@@ -1,4 +1,4 @@
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files\\tmr0.c"
+# 1 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers\\lin_slave.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,218 @@
 # 1 "<built-in>" 2
 # 1 "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files\\tmr0.c" 2
-# 51 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files\\tmr0.c"
+# 1 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers\\lin_slave.c" 2
+# 18 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers\\lin_slave.c"
+# 1 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/lin_slave.h" 1
+# 20 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/lin_slave.h"
+# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 1 3
+
+
+
+# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 5 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
+# 26 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
+# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 133 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned short uintptr_t;
+# 148 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef short intptr_t;
+# 164 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef signed char int8_t;
+
+
+
+
+typedef short int16_t;
+
+
+
+
+typedef __int24 int24_t;
+
+
+
+
+typedef long int32_t;
+
+
+
+
+
+typedef long long int64_t;
+# 194 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long intmax_t;
+
+
+
+
+
+typedef unsigned char uint8_t;
+
+
+
+
+typedef unsigned short uint16_t;
+
+
+
+
+typedef __uint24 uint24_t;
+
+
+
+
+typedef unsigned long uint32_t;
+
+
+
+
+
+typedef unsigned long long uint64_t;
+# 235 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long long uintmax_t;
+# 27 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
+
+typedef int8_t int_fast8_t;
+
+typedef int64_t int_fast64_t;
+
+
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
+
+typedef int24_t int_least24_t;
+typedef int24_t int_fast24_t;
+
+typedef int32_t int_least32_t;
+
+typedef int64_t int_least64_t;
+
+
+typedef uint8_t uint_fast8_t;
+
+typedef uint64_t uint_fast64_t;
+
+
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+typedef uint24_t uint_fast24_t;
+
+typedef uint32_t uint_least32_t;
+
+typedef uint64_t uint_least64_t;
+# 148 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
+# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/stdint.h" 1 3
+typedef int16_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint16_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 149 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
+# 20 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/lin_slave.h" 2
+
+# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdbool.h" 1 3
+# 21 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/lin_slave.h" 2
+
+
+
+typedef enum {
+    LIN_RX_IDLE,
+    LIN_RX_BREAK,
+    LIN_RX_SYNC,
+    LIN_RX_PID,
+    LIN_RX_DATA,
+    LIN_RX_CHECKSUM,
+    LIN_RX_TX_DATA,
+    LIN_RX_RDY,
+    LIN_RX_ERROR,
+    LIN_RX_WAIT
+}lin_rx_state_t;
+
+typedef enum {
+    TRANSMIT,
+    RECEIVE,
+    ERROR
+}lin_packet_type_t;
+
+typedef enum {
+    CMD,
+    TYPE,
+    LENGTH
+}lin_sch_param_t;
+
+typedef union {
+    struct {
+        uint8_t PID;
+        uint8_t data[8];
+        uint8_t checksum;
+        lin_packet_type_t type;
+        uint8_t length;
+    };
+    uint8_t rawPacket[13];
+}lin_packet_t;
+
+typedef struct {
+    uint8_t cmd;
+    lin_packet_type_t type;
+    uint8_t length;
+    uint8_t* data;
+}lin_rx_cmd_t;
+
+typedef union {
+    struct {
+        unsigned ID0: 1;
+        unsigned ID1: 1;
+        unsigned ID2: 1;
+        unsigned ID3: 1;
+        unsigned ID4: 1;
+        unsigned ID5: 1;
+        unsigned P0: 1;
+        unsigned P1: 1;
+    };
+    uint8_t rawPID;
+}lin_pid_t;
+
+
+void LIN_init(uint8_t tableLength, const lin_rx_cmd_t* const command, void (*processData)(void));
+
+void LIN_queuePacket(uint8_t cmd);
+
+void LIN_sendPacket(uint8_t length, uint8_t pid, uint8_t* data);
+
+uint8_t LIN_getPacket(uint8_t* data);
+
+uint8_t LIN_getFromTable(uint8_t cmd, lin_sch_param_t param);
+
+lin_rx_state_t LIN_handler(void);
+
+_Bool LIN_checkPID(uint8_t pid);
+
+uint8_t LIN_getChecksum(uint8_t length, uint8_t pid, uint8_t* data);
+
+uint8_t LIN_calcParity(uint8_t CMD);
+
+
+void LIN_startTimer(uint8_t timeout);
+
+void LIN_timerHandler(void);
+
+void LIN_setTimerHandler(void);
+
+void LIN_stopTimer(void);
+
+void LIN_enableRx(void);
+
+void LIN_disableRx(void);
+
+_Bool LIN_breakCheck(void);
+
+_Bool LIN_signalTimeoutOccurred(void);
+# 18 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers\\lin_slave.c" 2
+
+# 1 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h" 1
+# 54 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
 # 1 "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -21,16 +231,7 @@ extern double __fpnormalize(double);
 
 
 # 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 1 3
-
-
-
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 5 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
-
-
-
-
-
+# 10 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 3
 # 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\features.h" 1 3
 # 11 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
 # 21 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 3
@@ -39,10 +240,6 @@ extern double __fpnormalize(double);
 typedef long int wchar_t;
 # 128 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
-# 174 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __int24 int24_t;
-# 210 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __uint24 uint24_t;
 # 22 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
 
 int atoi (const char *);
@@ -4830,193 +5027,451 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 2 3
-# 51 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files\\tmr0.c" 2
-
-# 1 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/tmr0.h" 1
-# 54 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/tmr0.h"
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 1 3
-# 26 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 133 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned short uintptr_t;
-# 148 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef short intptr_t;
-# 164 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef signed char int8_t;
+# 54 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h" 2
+# 75 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+typedef union {
+    struct {
+        unsigned perr : 1;
+        unsigned ferr : 1;
+        unsigned oerr : 1;
+        unsigned reserved : 5;
+    };
+    uint8_t status;
+}eusart_status_t;
 
 
 
 
-typedef short int16_t;
-# 179 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long int32_t;
+extern volatile uint8_t eusartTxBufferRemaining;
+extern volatile uint8_t eusartRxCount;
 
 
 
 
+extern void (*EUSART_TxDefaultInterruptHandler)(void);
+extern void (*EUSART_RxDefaultInterruptHandler)(void);
+# 117 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+void EUSART_Initialize(void);
+# 165 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+_Bool EUSART_is_tx_ready(void);
+# 213 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+_Bool EUSART_is_rx_ready(void);
+# 260 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+_Bool EUSART_is_tx_done(void);
+# 308 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+eusart_status_t EUSART_get_last_status(void);
+# 328 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+uint8_t EUSART_Read(void);
+# 348 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+void EUSART_Write(uint8_t txData);
+# 369 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+void EUSART_Transmit_ISR(void);
+# 390 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+void EUSART_Receive_ISR(void);
+# 411 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+void EUSART_RxDataHandler(void);
+# 429 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
+# 447 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
+# 465 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+void EUSART_SetErrorHandler(void (* interruptHandler)(void));
+# 485 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+void EUSART_SetTxInterruptHandler(void (* interruptHandler)(void));
+# 505 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../eusart.h"
+void EUSART_SetRxInterruptHandler(void (* interruptHandler)(void));
+# 19 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers\\lin_slave.c" 2
 
-typedef long long int64_t;
-# 194 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long intmax_t;
-
-
-
-
-
-typedef unsigned char uint8_t;
-
-
-
-
-typedef unsigned short uint16_t;
-# 215 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long uint32_t;
-
-
-
-
-
-typedef unsigned long long uint64_t;
-# 235 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long long uintmax_t;
-# 27 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
-
-typedef int8_t int_fast8_t;
-
-typedef int64_t int_fast64_t;
-
-
-typedef int8_t int_least8_t;
-typedef int16_t int_least16_t;
-
-typedef int24_t int_least24_t;
-typedef int24_t int_fast24_t;
-
-typedef int32_t int_least32_t;
-
-typedef int64_t int_least64_t;
-
-
-typedef uint8_t uint_fast8_t;
-
-typedef uint64_t uint_fast64_t;
-
-
-typedef uint8_t uint_least8_t;
-typedef uint16_t uint_least16_t;
-
-typedef uint24_t uint_least24_t;
-typedef uint24_t uint_fast24_t;
-
-typedef uint32_t uint_least32_t;
-
-typedef uint64_t uint_least64_t;
-# 148 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/stdint.h" 1 3
-typedef int16_t int_fast16_t;
-typedef int32_t int_fast32_t;
-typedef uint16_t uint_fast16_t;
-typedef uint32_t uint_fast32_t;
-# 149 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
-# 54 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/tmr0.h" 2
-
-# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\stdbool.h" 1 3
-# 55 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/tmr0.h" 2
-# 98 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/tmr0.h"
+# 1 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../tmr0.h" 1
+# 98 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../tmr0.h"
 void TMR0_Initialize(void);
-# 129 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/tmr0.h"
+# 129 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../tmr0.h"
 uint8_t TMR0_ReadTimer(void);
-# 168 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/tmr0.h"
+# 168 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../tmr0.h"
 void TMR0_WriteTimer(uint8_t timerVal);
-# 204 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/tmr0.h"
+# 204 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../tmr0.h"
 void TMR0_Reload(void);
-# 219 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/tmr0.h"
+# 219 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../tmr0.h"
 void TMR0_ISR(void);
-# 238 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/tmr0.h"
+# 238 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../tmr0.h"
  void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 256 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/tmr0.h"
+# 256 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../tmr0.h"
 extern void (*TMR0_InterruptHandler)(void);
-# 274 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files/tmr0.h"
+# 274 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers/../tmr0.h"
 void TMR0_DefaultInterruptHandler(void);
-# 52 "D:\\yiming\\00work\\FR752_V05.X\\mcc_generated_files\\tmr0.c" 2
+# 20 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers\\lin_slave.c" 2
+
+# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\string.h" 1 3
+# 25 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\string.h" 3
+# 1 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 421 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct __locale_struct * locale_t;
+# 26 "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\pic\\include\\c99\\string.h" 2 3
+
+void *memcpy (void *restrict, const void *restrict, size_t);
+void *memmove (void *, const void *, size_t);
+void *memset (void *, int, size_t);
+int memcmp (const void *, const void *, size_t);
+void *memchr (const void *, int, size_t);
+
+char *strcpy (char *restrict, const char *restrict);
+char *strncpy (char *restrict, const char *restrict, size_t);
+
+char *strcat (char *restrict, const char *restrict);
+char *strncat (char *restrict, const char *restrict, size_t);
+
+int strcmp (const char *, const char *);
+int strncmp (const char *, const char *, size_t);
+
+int strcoll (const char *, const char *);
+size_t strxfrm (char *restrict, const char *restrict, size_t);
+
+char *strchr (const char *, int);
+char *strrchr (const char *, int);
+
+size_t strcspn (const char *, const char *);
+size_t strspn (const char *, const char *);
+char *strpbrk (const char *, const char *);
+char *strstr (const char *, const char *);
+char *strtok (char *restrict, const char *restrict);
+
+size_t strlen (const char *);
+
+char *strerror (int);
+
+
+
+
+char *strtok_r (char *restrict, const char *restrict, char **restrict);
+int strerror_r (int, char *, size_t);
+char *stpcpy(char *restrict, const char *restrict);
+char *stpncpy(char *restrict, const char *restrict, size_t);
+size_t strnlen (const char *, size_t);
+char *strdup (const char *);
+char *strndup (const char *, size_t);
+char *strsignal(int);
+char *strerror_l (int, locale_t);
+int strcoll_l (const char *, const char *, locale_t);
+size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+
+
+
+
+void *memccpy (void *restrict, const void *restrict, int, size_t);
+# 21 "D:\\yiming\\00work\\FR752_V06.X\\mcc_generated_files\\LINDrivers\\lin_slave.c" 2
 
 
 
 
 
+static void (*LIN_processData)(void);
 
-volatile uint8_t timer0ReloadVal;
-void (*TMR0_InterruptHandler)(void);
+lin_packet_t LIN_packet;
+_Bool LIN_rxInProgress = 0;
+const lin_rx_cmd_t *LIN_rxCommand;
+uint8_t LIN_rxCommandLength;
 
+static uint8_t LIN_timeout = 10;
+static _Bool LIN_timerRunning = 0;
+static volatile uint8_t CountCallBack = 0;
+static volatile uint16_t LIN_signalElapsedMs = 0;
+static volatile _Bool LIN_validSignalReceived = 0;
+static volatile _Bool LIN_signalTimedOut = 0;
+static volatile _Bool LIN_signalTimeoutPending = 0;
 
-
-
-void TMR0_Initialize(void)
-{
-
-
-
-    OPTION_REG = (uint8_t)((OPTION_REG & 0xC0) | (0xD4 & 0x3F));
-
-
-    TMR0 = 0x06;
-
-
-    timer0ReloadVal= 6;
-
-
-    INTCONbits.TMR0IF = 0;
-
-
-    INTCONbits.TMR0IE = 1;
-
-
-    TMR0_SetInterruptHandler(TMR0_DefaultInterruptHandler);
+void LIN_init(uint8_t tableLength, const lin_rx_cmd_t *const command,
+              void (*processData)(void)) {
+  LIN_rxCommand = command;
+  LIN_rxCommandLength = tableLength;
+  LIN_processData = processData;
+  LIN_stopTimer();
+  LIN_enableRx();
+  LIN_setTimerHandler();
 }
 
-uint8_t TMR0_ReadTimer(void)
-{
-    uint8_t readVal;
+void LIN_queuePacket(uint8_t cmd) {
+  const lin_rx_cmd_t *tempSchedule =
+      LIN_rxCommand;
 
-    readVal = TMR0;
-
-    return readVal;
-}
-
-void TMR0_WriteTimer(uint8_t timerVal)
-{
-
-    TMR0 = timerVal;
-}
-
-void TMR0_Reload(void)
-{
-
-    TMR0 = timer0ReloadVal;
-}
-
-void TMR0_ISR(void)
-{
-
-
-    INTCONbits.TMR0IF = 0;
-
-    TMR0 = timer0ReloadVal;
-
-    if(TMR0_InterruptHandler)
-    {
-        TMR0_InterruptHandler();
+  cmd &= 0x3F;
+  for (uint8_t i = 0; i < LIN_rxCommandLength; i++) {
+    if (cmd == tempSchedule->cmd) {
+      break;
     }
+    tempSchedule++;
+  }
+
+  LIN_packet.type = tempSchedule->type;
+  LIN_packet.length = tempSchedule->length;
 
 
+
+  memcpy(LIN_packet.data, tempSchedule->data, LIN_packet.length);
+
+
+  LIN_packet.checksum =
+      LIN_getChecksum(LIN_packet.length, LIN_packet.PID, LIN_packet.data);
+  LIN_sendPacket(LIN_packet.length, LIN_packet.PID, LIN_packet.data);
 }
 
+lin_rx_state_t LIN_handler(void) {
+  static lin_rx_state_t LIN_rxState = LIN_RX_IDLE;
+  static uint8_t rxDataIndex = 0;
 
-void TMR0_SetInterruptHandler(void (* InterruptHandler)(void)){
-    TMR0_InterruptHandler = InterruptHandler;
+  if (LIN_rxInProgress == 1) {
+    if (LIN_timerRunning == 0) {
+
+      LIN_rxState = LIN_RX_ERROR;
+    }
+  }
+
+  switch (LIN_rxState) {
+  case LIN_RX_IDLE:
+    if (EUSART_is_rx_ready() > 0) {
+
+      LIN_startTimer(20);
+      LIN_rxInProgress = 1;
+      LIN_rxState = LIN_RX_BREAK;
+    }
+    break;
+  case LIN_RX_BREAK:
+    if (EUSART_is_rx_ready() > 0) {
+      if (LIN_breakCheck() == 1) {
+        LIN_rxState = LIN_RX_SYNC;
+      } else {
+        LIN_rxState = LIN_RX_ERROR;
+      }
+    }
+    break;
+  case LIN_RX_SYNC:
+    if (EUSART_is_rx_ready() > 0) {
+      if (EUSART_Read() == 0x55) {
+        LIN_rxState = LIN_RX_PID;
+      } else {
+        LIN_rxState = LIN_RX_ERROR;
+      }
+    }
+    break;
+  case LIN_RX_PID:
+    if (EUSART_is_rx_ready() > 0) {
+      LIN_packet.PID = EUSART_Read();
+
+
+      if (LIN_checkPID(LIN_packet.PID) == 0) {
+        LIN_rxState = LIN_RX_ERROR;
+        break;
+      }
+      LIN_packet.type = LIN_getFromTable(LIN_packet.PID, TYPE);
+      if (LIN_packet.type == RECEIVE) {
+        LIN_packet.length = LIN_getFromTable(LIN_packet.PID, LENGTH);
+        LIN_rxState = LIN_RX_DATA;
+      } else {
+        LIN_disableRx();
+        LIN_rxState = LIN_RX_TX_DATA;
+      }
+    }
+    break;
+  case LIN_RX_DATA:
+    if (EUSART_is_rx_ready() > 0) {
+      LIN_packet.data[rxDataIndex] = EUSART_Read();
+      if (++rxDataIndex >= LIN_packet.length) {
+
+        rxDataIndex = 0;
+        LIN_rxState = LIN_RX_CHECKSUM;
+      }
+    }
+    break;
+  case LIN_RX_CHECKSUM:
+    if (EUSART_is_rx_ready() > 0) {
+      LIN_packet.checksum = EUSART_Read();
+      if (LIN_packet.checksum !=
+          LIN_getChecksum(LIN_packet.length, LIN_packet.PID, LIN_packet.data)) {
+        LIN_rxState = LIN_RX_ERROR;
+      } else {
+        LIN_rxState = LIN_RX_RDY;
+      }
+    }
+    break;
+  case LIN_RX_TX_DATA:
+    LIN_queuePacket(LIN_packet.PID);
+    LIN_rxState = LIN_RX_RDY;
+  case LIN_RX_RDY:
+    LIN_processData();
+  case LIN_RX_ERROR:
+    LIN_stopTimer();
+    rxDataIndex = 0;
+    LIN_rxInProgress = 0;
+    memset(LIN_packet.rawPacket, 0,
+           sizeof(LIN_packet.rawPacket));
+  case LIN_RX_WAIT:
+    if (TXSTAbits.TRMT) {
+      LIN_enableRx();
+      LIN_rxState = LIN_RX_IDLE;
+    } else {
+      LIN_rxState = LIN_RX_WAIT;
+    }
+    break;
+  }
+  return LIN_rxState;
 }
 
-void TMR0_DefaultInterruptHandler(void){
+void LIN_sendPacket(uint8_t length, uint8_t pid, uint8_t *data) {
 
 
+  for (uint8_t i = 0; i < length; i++) {
+    EUSART_Write(*(data + i));
+  }
+
+  EUSART_Write(LIN_getChecksum(length, pid, data));
+}
+
+uint8_t LIN_getPacket(uint8_t *data) {
+  uint8_t cmd = LIN_packet.PID & 0x3F;
+
+  memcpy(data, LIN_packet.data, sizeof(LIN_packet.data));
+  memset(LIN_packet.rawPacket, 0, sizeof(LIN_packet.rawPacket));
+  LIN_signalTimeoutPending = 0;
+  LIN_validSignalReceived = 1;
+
+  return cmd;
+}
+
+_Bool LIN_signalTimeoutOccurred(void) {
+  if (LIN_signalTimeoutPending) {
+    LIN_signalTimeoutPending = 0;
+    return 1;
+  }
+
+  return 0;
+}
+
+uint8_t LIN_getFromTable(uint8_t cmd, lin_sch_param_t param) {
+  const lin_rx_cmd_t *rxCommand =
+      LIN_rxCommand;
+
+  cmd &= 0x3F;
+
+  for (uint8_t length = 0; length < LIN_rxCommandLength; length++) {
+    if (cmd == rxCommand->cmd) {
+      break;
+    }
+    rxCommand++;
+
+    if (length == (LIN_rxCommandLength - 1)) {
+      return ERROR;
+    }
+  }
+
+  switch (param) {
+  case CMD:
+    return rxCommand->cmd;
+  case TYPE:
+    return rxCommand->type;
+  case LENGTH:
+    return rxCommand->length;
+  default:
+    break;
+  }
+
+  return ERROR;
+}
+
+_Bool LIN_checkPID(uint8_t pid) {
+  if (LIN_getFromTable(pid, TYPE) == ERROR)
+    return 0;
+
+  if (pid == LIN_calcParity(pid & 0x3F))
+    return 1;
+
+  return 0;
+}
+
+uint8_t LIN_calcParity(uint8_t CMD) {
+  lin_pid_t PID;
+  PID.rawPID = CMD;
+
+
+
+
+  PID.P0 = PID.ID0 ^ PID.ID1;
+  PID.P0 = PID.P0 ^ PID.ID2;
+  PID.P0 = PID.P0 ^ PID.ID4;
+  PID.P1 = PID.ID1 ^ PID.ID3;
+  PID.P1 = PID.P1 ^ PID.ID4;
+  PID.P1 = PID.P1 ^ PID.ID5;
+  PID.P1 = ~PID.P1;
+
+  return PID.rawPID;
+}
+
+uint8_t LIN_getChecksum(uint8_t length, uint8_t pid, uint8_t *data) {
+  uint16_t checksum = pid;
+
+  for (uint8_t i = 0; i < length; i++) {
+    checksum = checksum + *data++;
+    if (checksum > 0xFF)
+      checksum -= 0xFF;
+  }
+  checksum = ~checksum;
+
+  return (uint8_t)checksum;
+}
+
+void LIN_startTimer(uint8_t timeout) {
+  LIN_timeout = timeout;
+  TMR0_WriteTimer(0);
+  __nop();
+  LIN_timerRunning = 1;
+  CountCallBack = 0;
+}
+
+void LIN_timerHandler(void) {
+
+  if (LIN_validSignalReceived) {
+    LIN_validSignalReceived = 0;
+    LIN_signalElapsedMs = 0;
+    LIN_signalTimedOut = 0;
+    LIN_signalTimeoutPending = 0;
+  } else if (!LIN_signalTimedOut) {
+    if (++LIN_signalElapsedMs >= 2000U) {
+      LIN_signalTimedOut = 1;
+      LIN_signalTimeoutPending = 1;
+    }
+  }
+
+
+  if (++CountCallBack >= LIN_timeout) {
+
+
+    CountCallBack = 0;
+    LIN_timerRunning = 0;
+  }
+}
+
+void LIN_setTimerHandler(void) { TMR0_SetInterruptHandler(LIN_timerHandler); }
+
+void LIN_stopTimer(void) {
+  __nop();
+
+  CountCallBack = 0;
+  LIN_timerRunning = 0;
+}
+
+void LIN_enableRx(void) {
+  RCSTAbits.CREN = 1;
+  PIE1bits.RCIE = 1;
+}
+
+void LIN_disableRx(void) {
+  RCSTAbits.CREN = 0;
+  PIE1bits.RCIE = 0;
+}
+
+_Bool LIN_breakCheck(void) {
+
+  if ((EUSART_Read() == 0x00) && (EUSART_get_last_status().ferr == 1)) {
+    return 1;
+  }
+
+  return 0;
 }

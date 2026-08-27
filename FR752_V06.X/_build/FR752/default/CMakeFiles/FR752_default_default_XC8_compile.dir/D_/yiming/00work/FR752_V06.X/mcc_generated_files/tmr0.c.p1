@@ -1,37 +1,36 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"4202 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 4202: extern volatile unsigned char CCP1CON __attribute__((address(0x293)));
-[v _CCP1CON `Vuc ~T0 @X0 0 e@659 ]
-"4351
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 4351: extern volatile unsigned char ECCP1AS __attribute__((address(0x295)));
-[v _ECCP1AS `Vuc ~T0 @X0 0 e@661 ]
-"4284
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 4284: extern volatile unsigned char PWM1CON __attribute__((address(0x294)));
-[v _PWM1CON `Vuc ~T0 @X0 0 e@660 ]
-"4468
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 4468: extern volatile unsigned char PSTR1CON __attribute__((address(0x296)));
-[v _PSTR1CON `Vuc ~T0 @X0 0 e@662 ]
-"4182
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 4182: extern volatile unsigned char CCPR1H __attribute__((address(0x292)));
-[v _CCPR1H `Vuc ~T0 @X0 0 e@658 ]
-"4162
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 4162: extern volatile unsigned char CCPR1L __attribute__((address(0x291)));
-[v _CCPR1L `Vuc ~T0 @X0 0 e@657 ]
-"4875
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 4875:     struct {
-[s S244 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S244 . C1TSEL0 C1TSEL1 C2TSEL0 C2TSEL1 C3TSEL0 C3TSEL1 C4TSEL0 C4TSEL1 ]
-"4885
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 4885:     struct {
-[s S245 :2 `uc 1 :2 `uc 1 :2 `uc 1 :2 `uc 1 ]
-[n S245 . C1TSEL C2TSEL C3TSEL C4TSEL ]
-"4874
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 4874: typedef union {
-[u S243 `S244 1 `S245 1 ]
-[n S243 . . . ]
-"4892
-[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 4892: extern volatile CCPTMRS0bits_t CCPTMRS0bits __attribute__((address(0x29E)));
-[v _CCPTMRS0bits `VS243 ~T0 @X0 0 e@670 ]
+[v F2732 `(v ~T0 @X0 0 tf ]
+"1594 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 1594: extern volatile unsigned char OPTION_REG __attribute__((address(0x095)));
+[v _OPTION_REG `Vuc ~T0 @X0 0 e@149 ]
+"801
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 801: extern volatile unsigned char TMR0 __attribute__((address(0x015)));
+[v _TMR0 `Vuc ~T0 @X0 0 e@21 ]
+"357
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 357:     struct {
+[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S31 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
+"367
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 367:     struct {
+[s S32 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S32 . . T0IF . T0IE ]
+"356
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 356: typedef union {
+[u S30 `S31 1 `S32 1 ]
+[n S30 . . . ]
+"374
+[; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
+[v F2724 `(v ~T0 @X0 0 tf ]
+"238 D:\yiming\00work\FR752_V06.X\mcc_generated_files/tmr0.h
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/tmr0.h: 238:  void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _TMR0_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F2724 ]
+"274
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files/tmr0.h: 274: void TMR0_DefaultInterruptHandler(void);
+[v _TMR0_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
+[v F2741 `(v ~T0 @X0 0 tf ]
+[v F2743 `(v ~T0 @X0 0 tf ]
+[v F2745 `(v ~T0 @X0 0 tf ]
 "54 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -527,59 +526,151 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7099
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h: 7099: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"64 D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 64: void EPWM1_Initialize(void)
-[v _EPWM1_Initialize `(v ~T0 @X0 1 ef ]
+"58 D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 58: volatile uint8_t timer0ReloadVal;
+[v _timer0ReloadVal `Vuc ~T0 @X0 1 e ]
+"59
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 59: void (*TMR0_InterruptHandler)(void);
+[v _TMR0_InterruptHandler `*F2732 ~T0 @X0 1 e ]
+"64
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 64: void TMR0_Initialize(void)
+[v _TMR0_Initialize `(v ~T0 @X0 1 ef ]
 "65
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 65: {
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 65: {
 {
-[e :U _EPWM1_Initialize ]
+[e :U _TMR0_Initialize ]
 [f ]
 "69
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 69:  CCP1CON = 0x0C;
-[e = _CCP1CON -> -> 12 `i `uc ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 69:     OPTION_REG = (uint8_t)((OPTION_REG & 0xC0) | (0xD4 & 0x3F));
+[e = _OPTION_REG -> | & -> _OPTION_REG `i -> 192 `i & -> 212 `i -> 63 `i `uc ]
 "72
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 72:  ECCP1AS = 0x00;
-[e = _ECCP1AS -> -> 0 `i `uc ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 72:     TMR0 = 0x06;
+[e = _TMR0 -> -> 6 `i `uc ]
 "75
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 75:  PWM1CON = 0x80;
-[e = _PWM1CON -> -> 128 `i `uc ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 75:     timer0ReloadVal= 6;
+[e = _timer0ReloadVal -> -> 6 `i `uc ]
 "78
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 78:  PSTR1CON = 0x01;
-[e = _PSTR1CON -> -> 1 `i `uc ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 78:     INTCONbits.TMR0IF = 0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
 "81
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 81:  CCPR1H = 0x00;
-[e = _CCPR1H -> -> 0 `i `uc ]
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 81:     INTCONbits.TMR0IE = 1;
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
 "84
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 84:  CCPR1L = 0x00;
-[e = _CCPR1L -> -> 0 `i `uc ]
-"87
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 87:  CCPTMRS0bits.C1TSEL = 0x0;
-[e = . . _CCPTMRS0bits 1 0 -> -> 0 `i `uc ]
-"88
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 88: }
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 84:     TMR0_SetInterruptHandler(TMR0_DefaultInterruptHandler);
+[e ( _TMR0_SetInterruptHandler (1 &U _TMR0_DefaultInterruptHandler ]
+"85
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 85: }
 [e :UE 354 ]
 }
-"90
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 90: void EPWM1_LoadDutyValue(uint16_t dutyValue)
-[v _EPWM1_LoadDutyValue `(v ~T0 @X0 1 ef1`us ]
-"91
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 91: {
+"87
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 87: uint8_t TMR0_ReadTimer(void)
+[v _TMR0_ReadTimer `(uc ~T0 @X0 1 ef ]
+"88
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 88: {
 {
-[e :U _EPWM1_LoadDutyValue ]
-"90
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 90: void EPWM1_LoadDutyValue(uint16_t dutyValue)
-[v _dutyValue `us ~T0 @X0 1 r1 ]
-"91
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 91: {
+[e :U _TMR0_ReadTimer ]
 [f ]
+"89
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 89:     uint8_t readVal;
+[v _readVal `uc ~T0 @X0 1 a ]
+"91
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 91:     readVal = TMR0;
+[e = _readVal _TMR0 ]
 "93
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 93:     CCPR1L = ((dutyValue & 0x03FC)>>2);
-[e = _CCPR1L -> >> & -> _dutyValue `ui -> -> 1020 `i `ui -> 2 `i `uc ]
-"96
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 96:     CCP1CON = (uint8_t)((CCP1CON & 0xCF) | ((dutyValue & 0x0003)<<4));
-[e = _CCP1CON -> | -> & -> _CCP1CON `i -> 207 `i `ui << & -> _dutyValue `ui -> -> 3 `i `ui -> 4 `i `uc ]
-"97
-[; ;D:\yiming\00work\FR752_V05.X\mcc_generated_files\epwm1.c: 97: }
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 93:     return readVal;
+[e ) _readVal ]
+[e $UE 355  ]
+"94
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 94: }
 [e :UE 355 ]
+}
+"96
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 96: void TMR0_WriteTimer(uint8_t timerVal)
+[v _TMR0_WriteTimer `(v ~T0 @X0 1 ef1`uc ]
+"97
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 97: {
+{
+[e :U _TMR0_WriteTimer ]
+"96
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 96: void TMR0_WriteTimer(uint8_t timerVal)
+[v _timerVal `uc ~T0 @X0 1 r1 ]
+"97
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 97: {
+[f ]
+"99
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 99:     TMR0 = timerVal;
+[e = _TMR0 _timerVal ]
+"100
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 100: }
+[e :UE 356 ]
+}
+"102
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 102: void TMR0_Reload(void)
+[v _TMR0_Reload `(v ~T0 @X0 1 ef ]
+"103
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 103: {
+{
+[e :U _TMR0_Reload ]
+[f ]
+"105
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 105:     TMR0 = timer0ReloadVal;
+[e = _TMR0 _timer0ReloadVal ]
+"106
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 106: }
+[e :UE 357 ]
+}
+"108
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 108: void TMR0_ISR(void)
+[v _TMR0_ISR `(v ~T0 @X0 1 ef ]
+"109
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 109: {
+{
+[e :U _TMR0_ISR ]
+[f ]
+"112
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 112:     INTCONbits.TMR0IF = 0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"114
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 114:     TMR0 = timer0ReloadVal;
+[e = _TMR0 _timer0ReloadVal ]
+"116
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 116:     if(TMR0_InterruptHandler)
+[e $ ! != _TMR0_InterruptHandler -> -> 0 `i `*F2741 359  ]
+"117
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 117:     {
+{
+"118
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 118:         TMR0_InterruptHandler();
+[e ( *U _TMR0_InterruptHandler ..  ]
+"119
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 119:     }
+}
+[e :U 359 ]
+"122
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 122: }
+[e :UE 358 ]
+}
+"125
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 125: void TMR0_SetInterruptHandler(void (* InterruptHandler)(void)){
+[v _TMR0_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F2743 ]
+{
+[e :U _TMR0_SetInterruptHandler ]
+[v _InterruptHandler `*F2745 ~T0 @X0 1 r1 ]
+[f ]
+"126
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 126:     TMR0_InterruptHandler = InterruptHandler;
+[e = _TMR0_InterruptHandler _InterruptHandler ]
+"127
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 127: }
+[e :UE 360 ]
+}
+"129
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 129: void TMR0_DefaultInterruptHandler(void){
+[v _TMR0_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
+{
+[e :U _TMR0_DefaultInterruptHandler ]
+[f ]
+"132
+[; ;D:\yiming\00work\FR752_V06.X\mcc_generated_files\tmr0.c: 132: }
+[e :UE 361 ]
 }

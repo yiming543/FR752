@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Windows")
 set(CMAKE_HOST_SYSTEM_VERSION "10.0.26200")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "")
 
-include("D:/yiming/00work/FR752_V05.X/cmake/FR752/default/.generated/toolchain.cmake")
+include("D:/yiming/00work/FR752_V06.X/cmake/FR752/default/.generated/toolchain.cmake")
 
 set(CMAKE_SYSTEM "Generic")
 set(CMAKE_SYSTEM_NAME "Generic")

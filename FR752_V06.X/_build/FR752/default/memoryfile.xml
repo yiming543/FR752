@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="D:\yiming\00work\FR752_V05.X\out\FR752\default.hex">
+  <executable name="D:\yiming\00work\FR752_V06.X\out\FR752\default.hex">
     <memory name="program">
       <units>words</units>
       <length>8192</length>
