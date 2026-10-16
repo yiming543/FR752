@@ -24,7 +24,7 @@ rule C_COMPILER__FR752_default_default_XC8_compile_unscanned_
 #############################################
 # Rule for linking C executable.
 
-rule C_EXECUTABLE_LINKER__FR752_default_image_40rnrh_M_
+rule C_EXECUTABLE_LINKER__FR752_default_image_6nMLzswI_
   command = cmd.exe /C "$PRE_LINK && c:\PROGRA~1\MICROC~1\xc8\v2.46\bin\xc8-cc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\t00904\.mplab\app-finder\apps\cmake\v4.2.3\cmake-4.2.3-windows-x86_64\bin\cmake.exe --regenerate-during-build -SD:\yiming\00work\FR752_V06.X\cmake\FR752\default -BD:\yiming\00work\FR752_V06.X\_build\FR752\default
+  command = C:\Users\t00904\.mplab\app-finder\apps\cmake\v4.2.3\cmake-4.2.3-windows-x86_64\bin\cmake.exe --regenerate-during-build -SD:\yiming\04github\FR752\FR752_V06.X\cmake\FR752\default -BD:\yiming\04github\FR752\FR752_V06.X\_build\FR752\default
   description = Re-running CMake...
   generator = 1
 

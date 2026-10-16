@@ -54,7 +54,8 @@ events:
       - "C:/Users/t00904/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/t00904/AppData/Local/Python/bin/"
       - "C:/Users/t00904/.dotnet/tools/"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/"
+      - "C:/mingw32/bin/"
+      - "C:/mingw32/i686-w64-mingw32/bin/"
     searched_directories:
       - "C:/Users/t00904/.mplab/app-finder/apps/ninja/v1.13.2/ninja-build.com"
       - "C:/Users/t00904/.mplab/app-finder/apps/ninja/v1.13.2/ninja-build.exe"
@@ -87,8 +88,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -140,8 +142,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -211,8 +214,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -282,8 +286,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -353,8 +358,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -424,8 +430,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -495,8 +502,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -566,8 +574,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -637,8 +646,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -708,8 +718,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -779,8 +790,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -850,8 +862,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -921,8 +934,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -1006,7 +1020,8 @@ events:
       - "C:/Users/t00904/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/t00904/AppData/Local/Python/bin/"
       - "C:/Users/t00904/.dotnet/tools/"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/"
+      - "C:/mingw32/bin/"
+      - "C:/mingw32/i686-w64-mingw32/bin/"
     searched_directories:
       - "c:/Program Files/Microchip/xc8/v2.46/bin/strip.com"
       - "c:/Program Files/Microchip/xc8/v2.46/bin/strip.exe"
@@ -1083,10 +1098,8 @@ events:
       - "C:/Users/t00904/.dotnet/tools/strip.com"
       - "C:/Users/t00904/.dotnet/tools/strip.exe"
       - "C:/Users/t00904/.dotnet/tools/strip"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/strip.com"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/strip.exe"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/strip"
-    found: false
+      - "C:/mingw32/bin/strip.com"
+    found: "C:/mingw32/bin/strip.exe"
     search_context:
       ENV{PATH}:
         - "C:\\Users\\t00904\\.mplab\\app-finder\\apps\\ninja\\v1.13.2"
@@ -1113,8 +1126,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1160,7 +1174,8 @@ events:
       - "C:/Users/t00904/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/t00904/AppData/Local/Python/bin/"
       - "C:/Users/t00904/.dotnet/tools/"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/"
+      - "C:/mingw32/bin/"
+      - "C:/mingw32/i686-w64-mingw32/bin/"
     searched_directories:
       - "c:/Program Files/Microchip/xc8/v2.46/bin/ld.com"
       - "c:/Program Files/Microchip/xc8/v2.46/bin/ld.exe"
@@ -1237,10 +1252,8 @@ events:
       - "C:/Users/t00904/.dotnet/tools/ld.com"
       - "C:/Users/t00904/.dotnet/tools/ld.exe"
       - "C:/Users/t00904/.dotnet/tools/ld"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/ld.com"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/ld.exe"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/ld"
-    found: false
+      - "C:/mingw32/bin/ld.com"
+    found: "C:/mingw32/bin/ld.exe"
     search_context:
       ENV{PATH}:
         - "C:\\Users\\t00904\\.mplab\\app-finder\\apps\\ninja\\v1.13.2"
@@ -1267,8 +1280,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1314,7 +1328,8 @@ events:
       - "C:/Users/t00904/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/t00904/AppData/Local/Python/bin/"
       - "C:/Users/t00904/.dotnet/tools/"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/"
+      - "C:/mingw32/bin/"
+      - "C:/mingw32/i686-w64-mingw32/bin/"
     searched_directories:
       - "c:/Program Files/Microchip/xc8/v2.46/bin/nm.com"
       - "c:/Program Files/Microchip/xc8/v2.46/bin/nm.exe"
@@ -1391,10 +1406,8 @@ events:
       - "C:/Users/t00904/.dotnet/tools/nm.com"
       - "C:/Users/t00904/.dotnet/tools/nm.exe"
       - "C:/Users/t00904/.dotnet/tools/nm"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/nm.com"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/nm.exe"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/nm"
-    found: false
+      - "C:/mingw32/bin/nm.com"
+    found: "C:/mingw32/bin/nm.exe"
     search_context:
       ENV{PATH}:
         - "C:\\Users\\t00904\\.mplab\\app-finder\\apps\\ninja\\v1.13.2"
@@ -1421,8 +1434,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1468,7 +1482,8 @@ events:
       - "C:/Users/t00904/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/t00904/AppData/Local/Python/bin/"
       - "C:/Users/t00904/.dotnet/tools/"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/"
+      - "C:/mingw32/bin/"
+      - "C:/mingw32/i686-w64-mingw32/bin/"
     searched_directories:
       - "c:/Program Files/Microchip/xc8/v2.46/bin/objdump.com"
       - "c:/Program Files/Microchip/xc8/v2.46/bin/objdump.exe"
@@ -1545,10 +1560,8 @@ events:
       - "C:/Users/t00904/.dotnet/tools/objdump.com"
       - "C:/Users/t00904/.dotnet/tools/objdump.exe"
       - "C:/Users/t00904/.dotnet/tools/objdump"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/objdump.com"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/objdump.exe"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/objdump"
-    found: false
+      - "C:/mingw32/bin/objdump.com"
+    found: "C:/mingw32/bin/objdump.exe"
     search_context:
       ENV{PATH}:
         - "C:\\Users\\t00904\\.mplab\\app-finder\\apps\\ninja\\v1.13.2"
@@ -1575,8 +1588,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1622,7 +1636,8 @@ events:
       - "C:/Users/t00904/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/t00904/AppData/Local/Python/bin/"
       - "C:/Users/t00904/.dotnet/tools/"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/"
+      - "C:/mingw32/bin/"
+      - "C:/mingw32/i686-w64-mingw32/bin/"
     searched_directories:
       - "c:/Program Files/Microchip/xc8/v2.46/bin/objcopy.com"
       - "c:/Program Files/Microchip/xc8/v2.46/bin/objcopy.exe"
@@ -1699,10 +1714,8 @@ events:
       - "C:/Users/t00904/.dotnet/tools/objcopy.com"
       - "C:/Users/t00904/.dotnet/tools/objcopy.exe"
       - "C:/Users/t00904/.dotnet/tools/objcopy"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/objcopy.com"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/objcopy.exe"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/objcopy"
-    found: false
+      - "C:/mingw32/bin/objcopy.com"
+    found: "C:/mingw32/bin/objcopy.exe"
     search_context:
       ENV{PATH}:
         - "C:\\Users\\t00904\\.mplab\\app-finder\\apps\\ninja\\v1.13.2"
@@ -1729,8 +1742,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1776,7 +1790,8 @@ events:
       - "C:/Users/t00904/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/t00904/AppData/Local/Python/bin/"
       - "C:/Users/t00904/.dotnet/tools/"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/"
+      - "C:/mingw32/bin/"
+      - "C:/mingw32/i686-w64-mingw32/bin/"
     searched_directories:
       - "c:/Program Files/Microchip/xc8/v2.46/bin/readelf.com"
       - "c:/Program Files/Microchip/xc8/v2.46/bin/readelf.exe"
@@ -1853,10 +1868,8 @@ events:
       - "C:/Users/t00904/.dotnet/tools/readelf.com"
       - "C:/Users/t00904/.dotnet/tools/readelf.exe"
       - "C:/Users/t00904/.dotnet/tools/readelf"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/readelf.com"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/readelf.exe"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/readelf"
-    found: false
+      - "C:/mingw32/bin/readelf.com"
+    found: "C:/mingw32/bin/readelf.exe"
     search_context:
       ENV{PATH}:
         - "C:\\Users\\t00904\\.mplab\\app-finder\\apps\\ninja\\v1.13.2"
@@ -1883,8 +1896,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1930,7 +1944,8 @@ events:
       - "C:/Users/t00904/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/t00904/AppData/Local/Python/bin/"
       - "C:/Users/t00904/.dotnet/tools/"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/"
+      - "C:/mingw32/bin/"
+      - "C:/mingw32/i686-w64-mingw32/bin/"
     searched_directories:
       - "c:/Program Files/Microchip/xc8/v2.46/bin/dlltool.com"
       - "c:/Program Files/Microchip/xc8/v2.46/bin/dlltool.exe"
@@ -2007,10 +2022,8 @@ events:
       - "C:/Users/t00904/.dotnet/tools/dlltool.com"
       - "C:/Users/t00904/.dotnet/tools/dlltool.exe"
       - "C:/Users/t00904/.dotnet/tools/dlltool"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/dlltool.com"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/dlltool.exe"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/dlltool"
-    found: false
+      - "C:/mingw32/bin/dlltool.com"
+    found: "C:/mingw32/bin/dlltool.exe"
     search_context:
       ENV{PATH}:
         - "C:\\Users\\t00904\\.mplab\\app-finder\\apps\\ninja\\v1.13.2"
@@ -2037,8 +2050,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -2084,7 +2098,8 @@ events:
       - "C:/Users/t00904/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/t00904/AppData/Local/Python/bin/"
       - "C:/Users/t00904/.dotnet/tools/"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/"
+      - "C:/mingw32/bin/"
+      - "C:/mingw32/i686-w64-mingw32/bin/"
     searched_directories:
       - "c:/Program Files/Microchip/xc8/v2.46/bin/addr2line.com"
       - "c:/Program Files/Microchip/xc8/v2.46/bin/addr2line.exe"
@@ -2161,10 +2176,8 @@ events:
       - "C:/Users/t00904/.dotnet/tools/addr2line.com"
       - "C:/Users/t00904/.dotnet/tools/addr2line.exe"
       - "C:/Users/t00904/.dotnet/tools/addr2line"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/addr2line.com"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/addr2line.exe"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/addr2line"
-    found: false
+      - "C:/mingw32/bin/addr2line.com"
+    found: "C:/mingw32/bin/addr2line.exe"
     search_context:
       ENV{PATH}:
         - "C:\\Users\\t00904\\.mplab\\app-finder\\apps\\ninja\\v1.13.2"
@@ -2191,8 +2204,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -2238,7 +2252,8 @@ events:
       - "C:/Users/t00904/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/t00904/AppData/Local/Python/bin/"
       - "C:/Users/t00904/.dotnet/tools/"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/"
+      - "C:/mingw32/bin/"
+      - "C:/mingw32/i686-w64-mingw32/bin/"
     searched_directories:
       - "c:/Program Files/Microchip/xc8/v2.46/bin/tapi.com"
       - "c:/Program Files/Microchip/xc8/v2.46/bin/tapi.exe"
@@ -2315,9 +2330,12 @@ events:
       - "C:/Users/t00904/.dotnet/tools/tapi.com"
       - "C:/Users/t00904/.dotnet/tools/tapi.exe"
       - "C:/Users/t00904/.dotnet/tools/tapi"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/tapi.com"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/tapi.exe"
-      - "C:/Program Files/CodeBlocks/MinGW/bin/tapi"
+      - "C:/mingw32/bin/tapi.com"
+      - "C:/mingw32/bin/tapi.exe"
+      - "C:/mingw32/bin/tapi"
+      - "C:/mingw32/i686-w64-mingw32/bin/tapi.com"
+      - "C:/mingw32/i686-w64-mingw32/bin/tapi.exe"
+      - "C:/mingw32/i686-w64-mingw32/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
@@ -2345,8 +2363,9 @@ events:
         - "C:\\Users\\t00904\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\t00904\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
-        - "C:\\Program Files\\CodeBlocks\\MinGW\\bin"
         - "C:\\Users\\t00904\\.dotnet\\tools"
+        - "C:\\mingw32\\bin\\"
+        - "C:\\mingw32\\i686-w64-mingw32\\bin"
   -
     kind: "message-v1"
     backtrace:
